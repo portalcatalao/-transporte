@@ -75,6 +75,15 @@
       display: flex;
       gap: 1.5rem;
 
+      p {
+        cursor: pointer;
+
+        &:hover {
+          font-weight: 700;
+          color: var(--red-500);
+        }
+      }
+
       span {
         color: var(--red-500);
       }
