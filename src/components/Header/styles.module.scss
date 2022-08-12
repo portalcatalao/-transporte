@@ -28,12 +28,28 @@
     display: flex;
     gap: 2.5rem;
 
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+
+      color: var(--white);
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+
     .socialMedia {
       display: flex;
       justify-content: center;
       align-items: center;
 
       gap: 1rem;
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
     }
   }
 }

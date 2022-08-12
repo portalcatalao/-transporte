@@ -1,0 +1,44 @@
+.flagContainer {
+  background: var(--red-500);
+  padding: 4.5rem 7rem;
+  margin-top: 5.5rem;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 4rem;
+
+    color: var(--white);
+
+    width: 32rem;
+  }
+
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 8px;
+
+    width: 19rem;
+    height: 5rem;
+
+    background: var(--white);
+
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--gray-800);
+
+    &:hover {
+      background: var(--red-700);
+      color: var(--white);
+    }
+  }
+}

@@ -7,6 +7,7 @@ import {
   MapPin,
   Phone,
 } from "react-feather";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
             <p>
               A Transduarte é uma empresa focada em atender os usuários de
               transporte coletivo de Catalão com segurança, pontualidade e
-              conforto. 🚌
+              conforto.
             </p>
           </article>
 
@@ -42,20 +43,44 @@ export default function Footer() {
 
         <div className={styles.middleFooter}>
           <div className={styles.links}>
-            <a href="/">A Empresa</a>
+            <Link href="/">
+              <p>A Empresa</p>
+            </Link>
+
             <span>•</span>
-            <a href="">Transporte urbano</a>
+
+            <Link href="/urbanTransport">
+              <p>Transporte urbano</p>
+            </Link>
+
             <span>•</span>
-            <a href="">Fretamento e Turismo</a>
+
+            <Link href="/charterAndTourism">
+              <p>Fretamento e Turismo</p>
+            </Link>
+
             <span>•</span>
-            <a href="">Contato</a>
+
+            <Link href="/contact">
+              <p>Contato</p>
+            </Link>
+
             <span>•</span>
-            <a href="">contato@transduartego.com.br</a>
+
+            <p>contato@transduartego.com.br</p>
           </div>
           <div className={styles.socialMedia}>
-            <Facebook width={24} height={24} />
-            <Instagram width={24} height={24} />
-            <Linkedin width={24} height={24} />
+            <Link href="/">
+              <Facebook />
+            </Link>
+
+            <Link href="/">
+              <Instagram />
+            </Link>
+
+            <Link href="/">
+              <Linkedin />
+            </Link>
           </div>
         </div>
       </div>

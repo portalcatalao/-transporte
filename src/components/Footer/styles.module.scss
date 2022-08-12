@@ -4,6 +4,8 @@
   align-items: center;
 
   gap: 6rem;
+
+  margin-top: 10rem;
 }
 
 .footerContent {
@@ -86,6 +88,17 @@
       gap: 1rem;
 
       color: var(--red-500);
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        cursor: pointer;
+
+        &:hover {
+          color: var(--red-700);
+        }
+      }
     }
   }
 }

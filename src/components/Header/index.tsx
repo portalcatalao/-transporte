@@ -1,6 +1,7 @@
 import styles from "../Header/styles.module.scss";
 
 import { Facebook, Instagram, Linkedin } from "react-feather";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -8,15 +9,34 @@ export default function Header() {
       <div className={styles.headerContent}>
         <img src="logo.svg" alt="logo transduarte" />
         <nav>
-          <a>A Empresa</a>
-          <a>Transporte urbano</a>
-          <a>Fretamento e Turismo</a>
-          <a>Contato</a>
+          <Link href="/">
+            <p>A Empresa</p>
+          </Link>
+
+          <Link href="/urbanTransport">
+            <p>Transporte urbano</p>
+          </Link>
+
+          <Link href="/charterAndTourism">
+            <p>Fretamento e Turismo</p>
+          </Link>
+
+          <Link href="/contact">
+            <p>Contato</p>
+          </Link>
 
           <div className={styles.socialMedia}>
-            <Facebook width={24} height={24} />
-            <Instagram width={24} height={24} />
-            <Linkedin width={24} height={24} />
+            <Link href="/">
+              <Facebook />
+            </Link>
+
+            <Link href="/">
+              <Instagram />
+            </Link>
+
+            <Link href="/">
+              <Linkedin />
+            </Link>
           </div>
         </nav>
       </div>

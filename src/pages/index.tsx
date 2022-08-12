@@ -1,4 +1,11 @@
 import Head from "next/head";
+import Banner from "../components/Banner";
+import Company from "../components/Company";
+import Flag from "../components/Flag";
+import Fleet from "../components/Fleet";
+import Guide from "../components/Guide";
+import Place from "../components/Place";
+import Servicing from "../components/Servicing";
 
 export default function Home() {
   return (
@@ -8,7 +15,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <section></section>
+        <Banner />
+        <Company />
+        <Servicing />
+        <Flag />
+        <Fleet />
+        <Guide />
+        <Place />
       </main>
     </>
   );
