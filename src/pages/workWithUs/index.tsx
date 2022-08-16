@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function workWithUs() {
   return (
     <section>
@@ -9,30 +11,48 @@ export default function workWithUs() {
           <div className="formInput">
             <article>
               <label htmlFor="">Área de interesse</label>
-              <input type="text" placeholder="Qual o cargo pretendido" />
+              <input
+                type="text"
+                placeholder="Qual o cargo pretendido"
+                required
+              />
             </article>
 
             <article>
               <label htmlFor="">Nome</label>
-              <input type="text" placeholder="Digite seu nome completo" />
+              <input
+                type="text"
+                placeholder="Digite seu nome completo"
+                required
+              />
             </article>
 
             <article>
               <label htmlFor="">Telefone</label>
-              <input type="text" placeholder="(64) 9XXXX-XXXX" />
+              <input type="tel" placeholder="(64) 9XXXX-XXXX" required />
             </article>
 
             <article>
               <label htmlFor="">Mensagem</label>
-              <input type="text" placeholder="Mensagem" />
+              <input type="text" placeholder="Mensagem" required />
             </article>
 
             <article>
               <label htmlFor="">Currículo</label>
+
+              <input
+                type="file"
+                id="myFile"
+                name="filename"
+                accept="application/pdf"
+                required
+              />
             </article>
           </div>
 
-          <button>Enviar currículo</button>
+          <Link href="/">
+            <button>Enviar currículo</button>
+          </Link>
         </div>
       </div>
     </section>

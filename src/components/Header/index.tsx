@@ -19,7 +19,7 @@ export default function Header() {
             <img src="logo.svg" alt="Logotipo do Grupo Transduarte" />
           </Link>
           <nav ref={navRef} className="fixed-top">
-            <Link href="/" onClick={showNavBar}>
+            <Link href="/enterprise" onClick={showNavBar}>
               <p>A Empresa</p>
             </Link>
 

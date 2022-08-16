@@ -106,11 +106,21 @@ export default function sapOmbudsman() {
               </article>
 
               <article>
-                <label htmlFor="">Currículo</label>
+                <label htmlFor="">Anexo</label>
+
+                <input
+                  type="file"
+                  id="myFile"
+                  name="filename"
+                  accept="image/jpg, image/png"
+                  required
+                />
               </article>
             </div>
 
-            <button>Enviar mensagem</button>
+            <Link href="/">
+              <button>Enviar mensagem</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -195,11 +205,21 @@ export default function sapOmbudsman() {
               </article>
 
               <article>
-                <label htmlFor="">Currículo</label>
+                <label htmlFor="">Anexo</label>
+
+                <input
+                  type="file"
+                  id="myFile"
+                  name="filename"
+                  accept="image/jpg, image/png"
+                  required
+                />
               </article>
             </div>
 
-            <button>Enviar mensagem</button>
+            <Link href="/">
+              <button>Enviar mensagem</button>
+            </Link>
           </div>
         </div>
       </div>
