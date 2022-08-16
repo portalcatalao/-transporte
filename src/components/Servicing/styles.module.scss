@@ -36,11 +36,14 @@
   justify-content: space-between;
   align-items: center;
 
+  gap: 11rem;
+
   .card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
+    width: 100%;
     gap: 1rem;
 
     span {
@@ -53,15 +56,14 @@
     .cardBody {
       display: flex;
       flex-direction: column;
-
       gap: 1rem;
 
-      width: 32.5rem;
-      height: 34.625rem;
+      width: 100%;
+      height: 34rem;
 
       img {
         width: 100%;
-        height: 22.5rem;
+        height: 22rem;
       }
     }
 
@@ -70,6 +72,33 @@
       font-size: 1rem;
 
       color: var(--red-500);
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .listServicing {
+    flex-direction: column;
+    gap: 3rem;
+
+    width: 100%;
+
+    .card {
+      width: 100%;
+
+      .cardBody {
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        p {
+          width: 100%;
+        }
+      }
     }
   }
 }

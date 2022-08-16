@@ -5,8 +5,8 @@ export default function Place() {
   return (
     <div className={styles.placeContainer}>
       <div className={styles.titlePlace}>
-        <p>O QUE FAZEMOS</p>
-        <span>NOSSOS SERVIÇOS</span>
+        <p>LOCALIZAÇÃO</p>
+        <span>ONDE ATUAMOS</span>
       </div>
       <div className={styles.place}>
         <img src="/cities.png" alt="" />

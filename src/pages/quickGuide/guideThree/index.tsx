@@ -1,10 +1,10 @@
-import styles from "../../components/Guide/styles.module.scss";
+import styles from "../../../components/Guide/styles.module.scss";
 
-export default function guideTwo() {
+export default function guideThree() {
   return (
     <section>
       <span className="title">GUIA RÁPIDO</span>
-      <p className="subtitle">Criação do SAP</p>
+      <p className="subtitle">Direito à gratuidade do transporte</p>
 
       <div className={styles.guideContent}>
         <p>

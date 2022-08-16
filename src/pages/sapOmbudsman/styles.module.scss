@@ -88,11 +88,7 @@
 
       cursor: pointer;
 
-      :hover {
-        color: var(--red-700);
-      }
-
-      svg:hover {
+      svg {
         color: var(--red-500);
       }
 
@@ -135,6 +131,17 @@
       line-height: 1.5rem;
 
       color: var(--gray-600);
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .socialMedia {
+    flex-direction: column;
+    align-items: flex-start;
+
+    div {
+      flex-direction: column;
     }
   }
 }

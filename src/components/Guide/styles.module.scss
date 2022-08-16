@@ -79,3 +79,29 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .listGuide {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+
+    article {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .listGuide {
+    flex-direction: column;
+    width: 100%;
+
+    article {
+      width: 100%;
+    }
+  }
+}

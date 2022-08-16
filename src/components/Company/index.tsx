@@ -12,7 +12,7 @@ export default function Company() {
             <p>
               Mais de 40 anos de experiência no mercado de transporte e turismo!
             </p>
-            <div>
+            <div className={styles.numbers}>
               <article>
                 <Briefcase />
                 <span>+180</span>

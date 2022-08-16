@@ -86,7 +86,8 @@ export default function Footer() {
       </div>
 
       <div className={styles.footerCopyright}>
-        <p>© 2002-2022 PortalCatalão. Todos os direitos reservados.</p>
+        <p>© Portal Catalão Internet Services.</p>
+        <p>Todos os direitos reservados.</p>
       </div>
     </footer>
   );
