@@ -1,4 +1,4 @@
-import styles from "../publicTransportNumber/styles.module.scss";
+import styles from "./styles.module.scss";
 
 export default function publicTransportNumber() {
   return (

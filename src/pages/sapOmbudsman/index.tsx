@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin } from "react-feather";
-import styles from "../sapOmbudsman/styles.module.scss";
+import styles from "./styles.module.scss";
 
 export default function sapOmbudsman() {
   return (

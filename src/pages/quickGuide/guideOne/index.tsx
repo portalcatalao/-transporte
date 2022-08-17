@@ -1,4 +1,4 @@
-import styles from "../../../components/Guide/styles.module.scss";
+import styles from "./styles.module.scss";
 
 export default function guideOne() {
   return (

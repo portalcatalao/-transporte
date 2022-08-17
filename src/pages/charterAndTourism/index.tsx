@@ -1,4 +1,4 @@
-import styles from "../charterAndTourism/styles.module.scss";
+import styles from "./styles.module.scss";
 
 import Place from "../../components/Place";
 

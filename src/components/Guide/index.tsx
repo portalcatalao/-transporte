@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../Guide/styles.module.scss";
+import styles from "./styles.module.scss";
 
 export default function Guide() {
   return (

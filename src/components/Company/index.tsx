@@ -1,5 +1,5 @@
 import { Briefcase, Truck, Users } from "react-feather";
-import styles from "../Company/styles.module.scss";
+import styles from "./styles.module.scss";
 
 export default function Company() {
   return (

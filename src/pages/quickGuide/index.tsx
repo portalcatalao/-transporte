@@ -1,8 +1,5 @@
-// import styles from "../../components/Guide/styles.module.scss";
-
 import Link from "next/link";
 import styles from "../../components/Guide/styles.module.scss";
-import guideOne from "./guideOne";
 
 export default function quickGuide() {
   return (

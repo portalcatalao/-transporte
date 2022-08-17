@@ -1,4 +1,4 @@
-import styles from "../Footer/styles.module.scss";
+import styles from "./styles.module.scss";
 import {
   Facebook,
   Instagram,

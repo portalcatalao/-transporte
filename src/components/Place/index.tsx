@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone } from "react-feather";
-import styles from "../Place/styles.module.scss";
+import styles from "./styles.module.scss";
 
 export default function Place() {
   return (
