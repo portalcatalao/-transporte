@@ -4,7 +4,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
-import styles from "./styles.module.scss";
+import styles from "../Fleet/styles.module.scss";
 
 export default function Fleet() {
   return (

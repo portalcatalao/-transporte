@@ -1,4 +1,4 @@
-import styles from "./styles.module.scss";
+import styles from "../Servicing/styles.module.scss";
 
 export default function Servicing() {
   return (

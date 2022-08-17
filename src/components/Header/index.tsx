@@ -1,4 +1,4 @@
-import styles from "./styles.module.scss";
+import styles from "../Header/styles.module.scss";
 
 import {
   ChevronDown,
