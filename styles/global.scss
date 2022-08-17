@@ -209,6 +209,29 @@ a {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  section {
+    margin: 5rem 22rem;
+  }
+
+  .mySwiper {
+    .swiper-wrapper {
+      max-width: 110rem;
+      display: flex;
+      gap: 1rem;
+
+      margin: 0 3rem 3rem 3rem;
+
+      .swiper-slide {
+        margin: 0;
+        max-width: 335px;
+
+        overflow: hidden;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   section {
     margin-top: 2rem;

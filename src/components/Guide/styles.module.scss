@@ -27,7 +27,7 @@
 
     width: 17.5rem;
 
-    background: #ffffff;
+    background: var(--white);
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
 
@@ -76,6 +76,19 @@
 
     &:hover {
       background: var(--red-700);
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .listGuide {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    width: 100%;
+
+    article {
+      width: 100%;
     }
   }
 }

@@ -1,6 +1,13 @@
 import styles from "../Header/styles.module.scss";
 
-import { Facebook, Instagram, Linkedin, Menu, X } from "react-feather";
+import {
+  ChevronDown,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Menu,
+  X,
+} from "react-feather";
 import Link from "next/link";
 import { useRef } from "react";
 
@@ -19,12 +26,52 @@ export default function Header() {
             <img src="logo.svg" alt="Logotipo do Grupo Transduarte" />
           </Link>
           <nav ref={navRef} className="fixed-top">
-            <Link href="/enterprise" onClick={showNavBar}>
-              <p>A Empresa</p>
+            <Link href="/">
+              <li>
+                <Link href="/enterprise" onClick={showNavBar}>
+                  <ul className={styles.menuItem}>
+                    <p>A Empresa</p>
+                    <ChevronDown />
+                  </ul>
+                </Link>
+
+                <ul className={styles.subMenu}>
+                  <Link href="/enterprise">
+                    <p>Nossa história e valores</p>
+                  </Link>
+
+                  <Link href="/workWithUs">
+                    <p>Trabalhe conosco</p>
+                  </Link>
+
+                  <Link href="/supplierRegistration">
+                    <p>Cadastro de fornecedores</p>
+                  </Link>
+                </ul>
+              </li>
             </Link>
 
-            <Link href="/urbanTransport" onClick={showNavBar}>
-              <p>Transporte urbano</p>
+            <Link href="/">
+              <li>
+                <Link href="/quickGuide" onClick={showNavBar}>
+                  <ul className={styles.menuItem}>
+                    <p>Transporte urbano</p>
+                    <ChevronDown />
+                  </ul>
+                </Link>
+
+                <ul className={styles.subMenu}>
+                  <Link href="/quickGuide">
+                    <p>Guia rápido</p>
+                  </Link>
+                  <Link href="/sapOmbudsman">
+                    <p>SAP/Ouvidoria</p>
+                  </Link>
+                  <Link href="/publicTransportNumber">
+                    <p>Número de transporte coletivo</p>
+                  </Link>
+                </ul>
+              </li>
             </Link>
 
             <Link href="/charterAndTourism" onClick={showNavBar}>

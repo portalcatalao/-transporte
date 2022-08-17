@@ -84,6 +84,12 @@
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .placeContainer {
+    padding: 2rem 22rem;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   .place {
     display: flex;

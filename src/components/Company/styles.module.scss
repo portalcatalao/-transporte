@@ -113,6 +113,16 @@
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .companyContainer {
+    gap: 20rem;
+
+    .valuesCompany {
+      justify-content: space-between;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .companyContainer {
     flex-direction: column;

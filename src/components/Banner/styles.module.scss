@@ -40,6 +40,15 @@
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .bannerContainer {
+    article {
+      width: 40%;
+      padding: 10rem 0 0 22rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .bannerContainer {
     height: 470px;

@@ -76,6 +76,12 @@
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .listServicing {
+    gap: 324px;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   .listServicing {
     flex-direction: column;

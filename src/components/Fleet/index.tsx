@@ -39,22 +39,35 @@ export default function Fleet() {
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             className="mySwiper"
             breakpoints={{
-              1439: {
-                slidesPerView: 1,
+              1919: {
+                slidesPerView: 5,
               },
+
+              1439: {
+                slidesPerView: 3,
+              },
+
               1024: {
                 slidesPerView: 1,
                 slidesPerGroup: 2.5,
               },
+
               768: {
                 slidesPerView: 2,
               },
+
               320: {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
               },
             }}
           >
+            <SwiperSlide>
+              <img src="/bus-1.png" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/bus-1.png" alt="" />
+            </SwiperSlide>
             <SwiperSlide>
               <img src="/bus-1.png" alt="" />
             </SwiperSlide>

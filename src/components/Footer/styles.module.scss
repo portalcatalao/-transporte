@@ -130,6 +130,23 @@
   line-height: 1.5rem;
 }
 
+@media screen and (min-width: 1920px) {
+  .footerContent {
+    padding: 2rem 22rem;
+  }
+  .footerContent {
+    margin: 0;
+
+    .topFooter {
+      margin: 0;
+    }
+
+    .middleFooter {
+      margin: 0;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .footerContent {
     padding-top: 2rem;
