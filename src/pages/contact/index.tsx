@@ -10,7 +10,6 @@ import {
 } from "react-feather";
 
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -23,7 +22,7 @@ export default function Contact() {
       <div className={styles.contactContainer}>
         <p>Presencial</p>
         <div className={styles.contactContent}>
-          <Image src="/place.png" alt="" />
+          <img src="/place.png" alt="" />
           <div className={styles.card}>
             <div className={styles.contact}>
               <span>Escritório/Garagem</span>

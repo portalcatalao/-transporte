@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 import styles from "../Fleet/styles.module.scss";
-import Image from "next/image";
 
 export default function Fleet() {
   return (
@@ -53,25 +52,25 @@ export default function Fleet() {
             }}
           >
             <SwiperSlide>
-              <Image src="/bus-1.png" alt="" />
+              <img src="/bus-1.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src="/bus-1.png" alt="" />
+              <img src="/bus-1.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src="/bus-1.png" alt="" />
+              <img src="/bus-1.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src="/bus-1.png" alt="" />
+              <img src="/bus-1.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src="/bus-1.png" alt="" />
+              <img src="/bus-1.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src="/bus-1.png" alt="" />
+              <img src="/bus-1.png" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src="/bus-1.png" alt="" />
+              <img src="/bus-1.png" alt="" />
             </SwiperSlide>
           </Swiper>
         </div>

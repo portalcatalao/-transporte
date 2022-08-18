@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Briefcase, Truck, Users } from "react-feather";
 import styles from "../Company/styles.module.scss";
 
@@ -33,7 +32,7 @@ export default function Company() {
               </article>
             </div>
           </div>
-          <Image src="/company.png" alt="" />
+          <img src="/company.png" alt="" />
         </div>
 
         <div className={styles.valuesCompany}>
@@ -64,7 +63,7 @@ export default function Company() {
             </p>
           </div>
 
-          <Image src="/grupo-transduarte.png" alt="" />
+          <img src="/grupo-transduarte.png" alt="" />
         </div>
       </div>
     </section>

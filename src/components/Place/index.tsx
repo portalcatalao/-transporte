@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Mail, MapPin, Phone } from "react-feather";
 import styles from "../Place/styles.module.scss";
 
@@ -10,7 +9,7 @@ export default function Place() {
         <span>ONDE ATUAMOS</span>
       </div>
       <div className={styles.place}>
-        <Image src="/cities.png" alt="" />
+        <img src="/cities.png" alt="" />
         <div className={styles.card}>
           <p>
             Hoje são 162 veículos transportando cerca de 4 mil passageiros por

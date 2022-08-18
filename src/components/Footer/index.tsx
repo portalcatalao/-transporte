@@ -8,7 +8,6 @@ import {
   Phone,
 } from "react-feather";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -16,7 +15,7 @@ export default function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.topFooter}>
           <article>
-            <Image src="logo2.svg" alt="" />
+            <img src="logo2.svg" alt="" />
             <p>
               A Transduarte é uma empresa focada em atender os usuários de
               transporte coletivo de Catalão com segurança, pontualidade e
