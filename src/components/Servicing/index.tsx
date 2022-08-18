@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "../Servicing/styles.module.scss";
 
 export default function Servicing() {
@@ -14,7 +15,7 @@ export default function Servicing() {
             <span>Fretamento executivo</span>
 
             <div className={styles.cardBody}>
-              <img src="/bus-1.png" alt="" />
+              <Image src="/bus-1.png" alt="" />
               <p>
                 Oferecemos o serviço de fretamentos para empresas, faculdades e
                 turismo. Dispomos de carros de pequeno porte, vans e
@@ -30,7 +31,7 @@ export default function Servicing() {
             <span>Transporte coletivo</span>
 
             <div className={styles.cardBody}>
-              <img src="/bus-2.png" alt="" />
+              <Image src="/bus-2.png" alt="" />
               <p>
                 Realizamos serviços de transporte coletivo de passageiros no
                 município de Catalão, nas categorias urbana e rural além de

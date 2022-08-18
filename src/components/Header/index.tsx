@@ -10,6 +10,7 @@ import {
 } from "react-feather";
 import Link from "next/link";
 import { useRef } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const navRef = useRef(null);
@@ -23,7 +24,7 @@ export default function Header() {
       <div className={styles.headerContainer}>
         <div className={styles.headerContent}>
           <Link href="/">
-            <img src="logo.svg" alt="Logotipo do Grupo Transduarte" />
+            <Image src="logo.svg" alt="Logotipo do Grupo Transduarte" />
           </Link>
           <nav ref={navRef} className="fixed-top">
             <Link href="/">

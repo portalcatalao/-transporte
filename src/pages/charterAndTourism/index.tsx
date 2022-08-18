@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 
 import Place from "../../components/Place";
+import Image from "next/image";
 
 export default function charterAndTourism() {
   return (
@@ -12,17 +13,17 @@ export default function charterAndTourism() {
 
         <div className={styles.transport}>
           <article>
-            <img src="/bus.png" alt="" />
+            <Image src="/bus.png" alt="" />
             <p>Ônibus</p>
           </article>
 
           <article>
-            <img src="/minibus.png" alt="" />
+            <Image src="/minibus.png" alt="" />
             <p>Micro-ônibus</p>
           </article>
 
           <article>
-            <img src="/taxi.png" alt="" />
+            <Image src="/taxi.png" alt="" />
             <p>Táxi</p>
           </article>
         </div>

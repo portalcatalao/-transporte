@@ -1,4 +1,5 @@
-import styles from "./styles.module.scss";
+import Image from "next/image";
+import styles from "../../../components/Guide/styles.module.scss";
 
 export default function guideFour() {
   return (
@@ -7,7 +8,7 @@ export default function guideFour() {
       <p className="subtitle">Mapa das rotas</p>
 
       <div className={styles.guideContent}>
-        <img
+        <Image
           src="/map-route.png"
           alt="Imagem de uma rota no mapa em um celular"
         />
