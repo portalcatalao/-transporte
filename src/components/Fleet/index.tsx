@@ -29,7 +29,7 @@ export default function Fleet() {
             className="mySwiper"
             breakpoints={{
               1919: {
-                slidesPerView: 5,
+                slidesPerView: 4.2,
               },
 
               1439: {

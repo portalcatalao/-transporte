@@ -22,4 +22,71 @@
 }
 
 .calendarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+  margin: 5rem 0;
+}
+
+.headerCalendar {
+  width: 100%;
+  padding: 0 11rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    text-align: center;
+
+    color: var(--gray-800);
+  }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.bodyCalendar {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.5rem;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 6.5rem;
+    height: 5rem;
+
+    span {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 32px;
+      gap: 8px;
+
+      width: 208px;
+      height: 80px;
+
+      background: #dddddd;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 1rem;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: var(--gray-800);
+    }
+  }
 }

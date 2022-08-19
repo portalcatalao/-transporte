@@ -209,14 +209,14 @@ a {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1919px) {
   section {
     margin: 5rem 22rem;
   }
 
   .mySwiper {
     .swiper-wrapper {
-      max-width: 110rem;
+      max-width: 70rem;
       display: flex;
       gap: 1rem;
 

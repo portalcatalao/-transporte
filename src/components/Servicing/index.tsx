@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../Servicing/styles.module.scss";
 
 export default function Servicing() {
@@ -21,10 +22,6 @@ export default function Servicing() {
                 micro-ônibus e ônibus.
               </p>
             </div>
-
-            <div className={styles.cardFooter}>
-              <a href="">Saiba mais</a>
-            </div>
           </div>
           <div className={styles.card}>
             <span>Transporte coletivo</span>
@@ -38,10 +35,6 @@ export default function Servicing() {
                 diversas empresas e serviços rodoviários, que atendem a 5
                 municípios próximos à Catalão.
               </p>
-            </div>
-
-            <div className={styles.cardFooter}>
-              <a href="">Saiba mais</a>
             </div>
           </div>
         </div>
