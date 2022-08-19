@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "react-feather";
 import styles from "./styles.module.scss";
 
@@ -15,31 +16,41 @@ export default function publicTransportNumber() {
       </div>
 
       <div className={styles.calendarContainer}>
-        <div className={styles.headerCalendar}>
-          <ChevronLeft />
-          <span>2022</span>
-          <ChevronRight />
-        </div>
-        <div className={styles.bodyCalendar}>
-          <div>
-            <span>Janeiro</span>
-            <span>Fevereiro</span>
-            <span>Março</span>
+        <div className={styles.calendarContent}>
+          <div className={styles.headerCalendar}>
+            <Link href="/">
+              <button>
+                <ChevronLeft />
+              </button>
+            </Link>
+            <span>2022</span>
+            <Link href="/">
+              <button>
+                <ChevronRight />
+              </button>
+            </Link>
           </div>
-          <div>
-            <span>Abril</span>
-            <span>Maio</span>
-            <span>Junho</span>
-          </div>
-          <div>
-            <span>Julho</span>
-            <span>Agosto</span>
-            <span>Setembro</span>
-          </div>
-          <div>
-            <span>Outubro</span>
-            <span>Novembro</span>
-            <span>Dezembro</span>
+          <div className={styles.bodyCalendar}>
+            <div>
+              <button>Janeiro</button>
+              <button>Fevereiro</button>
+              <button>Março</button>
+            </div>
+            <div>
+              <button>Abril</button>
+              <button>Maio</button>
+              <button>Junho</button>
+            </div>
+            <div>
+              <button>Julho</button>
+              <button>Agosto</button>
+              <button>Setembro</button>
+            </div>
+            <div>
+              <button>Outubro</button>
+              <button>Novembro</button>
+              <button>Dezembro</button>
+            </div>
           </div>
         </div>
       </div>

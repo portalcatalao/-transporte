@@ -23,18 +23,27 @@
 
 .calendarContainer {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+
   justify-content: center;
   align-items: center;
 
-  gap: 2rem;
-  margin: 5rem 0;
+  margin: 4rem 0;
+
+  .calendarContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+  }
 }
 
 .headerCalendar {
-  width: 100%;
-  padding: 0 11rem;
   display: flex;
+  width: 100%;
+
   justify-content: space-between;
   align-items: center;
 
@@ -47,9 +56,22 @@
     color: var(--gray-800);
   }
 
-  svg {
-    width: 2rem;
-    height: 2rem;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0.5rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &:hover {
+      color: var(--white);
+      background: var(--gray-800);
+    }
   }
 }
 
@@ -66,7 +88,7 @@
     gap: 6.5rem;
     height: 5rem;
 
-    span {
+    button {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -77,7 +99,6 @@
       width: 208px;
       height: 80px;
 
-      background: #dddddd;
       border-radius: 4px;
       font-weight: 500;
       font-size: 1rem;
@@ -87,6 +108,12 @@
       text-align: center;
 
       color: var(--gray-800);
+
+      &:hover,
+      &:focus {
+        color: var(--white);
+        background: var(--red-500);
+      }
     }
   }
 }
