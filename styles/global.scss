@@ -155,11 +155,15 @@ a {
       color: var(--gray-800);
     }
 
-    input {
+    input,
+    textarea {
       width: 100%;
       padding: 0.5rem 1rem;
 
       border: 1px solid var(--gray-600);
+
+      font-size: 1rem;
+      font-weight: 400;
 
       &::placeholder {
         font-weight: 400;
@@ -172,11 +176,14 @@ a {
         border: 1.5px solid var(--gray-600);
       }
     }
+
+    textarea {
+      height: 12rem;
+    }
   }
 }
 
 // swiper
-
 .mySwiper {
   .swiper-wrapper {
     max-width: 1100px;

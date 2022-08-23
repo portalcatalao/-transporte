@@ -102,7 +102,11 @@ export default function sapOmbudsman() {
 
               <article>
                 <label htmlFor="">Mensagem</label>
-                <input type="text" placeholder="Mensagem" />
+                <textarea
+                  name="mensagem"
+                  id="mensagem"
+                  placeholder="Mensagem"
+                />
               </article>
 
               <article>
@@ -201,7 +205,11 @@ export default function sapOmbudsman() {
 
               <article>
                 <label htmlFor="">Mensagem</label>
-                <input type="text" placeholder="Mensagem" />
+                <textarea
+                  name="mensagem"
+                  id="mensagem"
+                  placeholder="Mensagem"
+                />
               </article>
 
               <article>

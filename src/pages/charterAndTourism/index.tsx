@@ -58,7 +58,12 @@ export default function charterAndTourism() {
 
               <article>
                 <label htmlFor="">Mensagem</label>
-                <input type="text" placeholder="Mensagem" />
+
+                <textarea
+                  name="mensagem"
+                  id="mensagem"
+                  placeholder="Mensagem"
+                />
               </article>
             </div>
 

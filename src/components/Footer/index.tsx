@@ -36,7 +36,7 @@ export default function Footer() {
 
             <div>
               <Mail />
-              <p>contato@transduartego.com.br</p>
+              <p>atendimento@transduartego.com.br</p>
             </div>
           </article>
         </div>
@@ -67,7 +67,7 @@ export default function Footer() {
 
             <span>•</span>
 
-            <p>contato@transduartego.com.br</p>
+            <p>atendimento@transduartego.com.br</p>
           </div>
           <div className={styles.socialMedia}>
             <Link href="/">
