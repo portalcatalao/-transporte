@@ -47,18 +47,20 @@ const sendmail = async (req: NextApiRequest, res: NextApiResponse) => {
     }
     // -------------------
 
-    try {
-        transporter.sendMail(mailData, function (err, info) {
-            if (err)
-                console.log(err)
-            else
-                console.log(info)
-        })
+    await new Promise((resolve, reject) => {
+        // send mail
+        transporter.sendMail(mailData, (err, info) => {
+            if (err) {
+                console.error(err);
+                reject(err);
+            } else {
+                console.log(info);
+                resolve(info);
+            }
+        });
+    });
 
-        res.status(200).json({ success: true })
-    } catch (error) {
-        res.status(500).json({ success: false })
-    }
+    res.status(200).json({ success: true })
 }
 
 export default sendmail;
