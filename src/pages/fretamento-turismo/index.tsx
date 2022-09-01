@@ -2,8 +2,29 @@ import styles from "./styles.module.scss";
 
 import Place from "../../components/Place";
 
+import Router from "next/router";
+
 
 export default function CharterAndTourism() {
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+
+    const formData = new FormData(event.target);
+    Object.keys(event).forEach(key => {
+      formData.append(key, event[key]);
+    });
+
+    const response = await fetch("/api/solicitar-orcamento", {
+      method: "POST",
+      body: formData,
+    })
+
+    const json = await response.json();
+    if (json.success) {
+      Router.push('/')
+    }
+  };
+
   return (
     <div>
       <section>
@@ -28,7 +49,7 @@ export default function CharterAndTourism() {
           </article>
         </div>
 
-        <form action="/api/solicitar-orcamento" method="POST" className="formContainer" encType="multipart/form-data">
+        <form onSubmit={handleSubmit} className="formContainer" encType="multipart/form-data">
           <p>Faça um orçamento</p>
           <div className="formContent">
             <div className="formInput">
@@ -44,12 +65,12 @@ export default function CharterAndTourism() {
 
               <article>
                 <label htmlFor="">E-mail</label>
-                <input name="email" type="text" placeholder="Digite seu e-mail" />
+                <input name="email" type="email" placeholder="Digite seu e-mail" />
               </article>
 
               <article>
                 <label htmlFor="">Telefone</label>
-                <input name="phone" type="text" placeholder="(64) 9XXXX-XXXX" />
+                <input name="phone" type="tel" placeholder="(64) 9XXXX-XXXX" />
               </article>
 
               <article>

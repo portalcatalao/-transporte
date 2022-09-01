@@ -5,7 +5,7 @@ import multiparty from "multiparty";
 
 require('dotenv').config()
 
-const uploadImage = async (req: NextApiRequest, res: NextApiResponse) => {
+const sendemail = async (req: NextApiRequest, res: NextApiResponse) => {
     const form = new multiparty.Form();
     const { fields, files } = await new Promise((resolve, reject) => {
         form.parse(req, function (err, fields, files) {
@@ -51,18 +51,21 @@ const uploadImage = async (req: NextApiRequest, res: NextApiResponse) => {
     }
     // -------------------
 
-    transporter.sendMail(mailData, function (err, info) {
-        if (err)
-            console.log(err)
-        else
-            console.log(info)
-    })
+    try {
+        transporter.sendMail(mailData, function (err, info) {
+            if (err)
+                console.log(err)
+            else
+                console.log(info)
+        })
 
-    // EDITE AQUI PARA QUAL PÁGINA VOCê QUER REDIRECIONAR O USUÁRIO APÓS ENVIAR O FORMULÁRIO
-    res.status(200).redirect('/')
+        res.status(200).json({ success: true })
+    } catch (error) {
+        res.status(500).json({ success: false })
+    }
 }
 
-export default uploadImage;
+export default sendemail;
 export const config = {
     api: {
         bodyParser: false,

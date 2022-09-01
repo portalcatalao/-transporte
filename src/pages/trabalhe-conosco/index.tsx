@@ -1,11 +1,30 @@
-
+import Router from "next/router";
 
 export default function WorkWithUs() {
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+
+    const formData = new FormData(event.target);
+    Object.keys(event).forEach(key => {
+      formData.append(key, event[key]);
+    });
+
+    const response = await fetch("/api/trabalhe-conosco", {
+      method: "POST",
+      body: formData,
+    })
+
+    const json = await response.json();
+    if (json.success) {
+      Router.push('/')
+    }
+  };
+
   return (
     <section>
       <span className="title">TRABALHE CONOSCO</span>
 
-      <form action="/api/trabalhe-conosco" method="POST" className="formContainer" encType="multipart/form-data">
+      <form onSubmit={handleSubmit} className="formContainer" encType="multipart/form-data">
         <p>Preencha com seus dados</p>
         <div className="formContent">
           <div className="formInput">

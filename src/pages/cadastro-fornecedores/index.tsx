@@ -1,8 +1,29 @@
+import Router from "next/router";
+
 export default function SupplierRegistration() {
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+
+    const formData = new FormData(event.target);
+    Object.keys(event).forEach(key => {
+      formData.append(key, event[key]);
+    });
+
+    const response = await fetch("/api/cadastro-fornecedores", {
+      method: "POST",
+      body: formData,
+    })
+
+    const json = await response.json();
+    if (json.success) {
+      Router.push('/')
+    }
+  };
+
   return (
     <section>
       <span className="title">CADASTRO DE FORNECEDORES</span>
-      <form action="/api/cadastro-fornecedores" method="POST" className="formContainer" encType="multipart/form-data">
+      <form onSubmit={handleSubmit} className="formContainer" encType="multipart/form-data">
         <p>Nos envie uma mensagem</p>
 
         <div className="formContent">
@@ -14,12 +35,12 @@ export default function SupplierRegistration() {
 
             <article>
               <label htmlFor="">E-mail</label>
-              <input name="email" type="text" placeholder="Digite seu e-mail" />
+              <input name="email" type="email" placeholder="Digite seu e-mail" />
             </article>
 
             <article>
               <label htmlFor="">Telefone</label>
-              <input name="phone" type="text" placeholder="(64) 9XXXX-XXXX" />
+              <input name="phone" type="tel" placeholder="(64) 9XXXX-XXXX" />
             </article>
 
             <article>
