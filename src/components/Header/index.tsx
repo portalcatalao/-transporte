@@ -36,15 +36,15 @@ export default function Header() {
                 </Link>
 
                 <ul className={styles.subMenu}>
-                  <Link href="/enterprise">
+                  <Link href="/empresa">
                     <p>Nossa história e valores</p>
                   </Link>
 
-                  <Link href="/workWithUs">
+                  <Link href="/trabalhe-conosco">
                     <p>Trabalhe conosco</p>
                   </Link>
 
-                  <Link href="/supplierRegistration">
+                  <Link href="/cadastro-fornecedores">
                     <p>Cadastro de fornecedores</p>
                   </Link>
                 </ul>
@@ -53,7 +53,7 @@ export default function Header() {
 
             <Link href="/">
               <li>
-                <Link href="/quickGuide" onClick={showNavBar}>
+                <Link href="/guia-rapido" onClick={showNavBar}>
                   <ul className={styles.menuItem}>
                     <p>Transporte urbano</p>
                     <ChevronDown />
@@ -61,24 +61,24 @@ export default function Header() {
                 </Link>
 
                 <ul className={styles.subMenu}>
-                  <Link href="/quickGuide">
+                  <Link href="/guia-rapido">
                     <p>Guia rápido</p>
                   </Link>
-                  <Link href="/sapOmbudsman">
+                  <Link href="/sap-ouvidoria">
                     <p>SAP/Ouvidoria</p>
                   </Link>
-                  <Link href="/publicTransportNumber">
+                  <Link href="/transporte-publico">
                     <p>Número de transporte coletivo</p>
                   </Link>
                 </ul>
               </li>
             </Link>
 
-            <Link href="/charterAndTourism" onClick={showNavBar}>
+            <Link href="/fretamento-turismo" onClick={showNavBar}>
               <p>Fretamento e Turismo</p>
             </Link>
 
-            <Link href="/contact" onClick={showNavBar}>
+            <Link href="/contato" onClick={showNavBar}>
               <p>Contato</p>
             </Link>
 

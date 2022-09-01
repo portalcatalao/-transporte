@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Facebook, Instagram, Linkedin } from "react-feather";
 import styles from "./styles.module.scss";
 
-export default function sapOmbudsman() {
+export default function SapOmbudsman() {
   return (
     <section>
       <span className="title">TRANSPORTE URBANO</span>

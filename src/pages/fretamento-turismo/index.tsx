@@ -2,7 +2,8 @@ import styles from "./styles.module.scss";
 
 import Place from "../../components/Place";
 
-export default function charterAndTourism() {
+
+export default function CharterAndTourism() {
   return (
     <div>
       <section>
@@ -27,49 +28,49 @@ export default function charterAndTourism() {
           </article>
         </div>
 
-        <div className="formContainer">
+        <form action="/api/solicitar-orcamento" method="POST" className="formContainer" encType="multipart/form-data">
           <p>Faça um orçamento</p>
           <div className="formContent">
             <div className="formInput">
               <article>
                 <label htmlFor="">Origem</label>
-                <input type="text" placeholder="Informe o local de origem" />
+                <input name="origin" type="text" placeholder="Informe o local de origem" />
               </article>
 
               <article>
                 <label htmlFor="">Destino</label>
-                <input type="text" placeholder="Informe o local de destino" />
+                <input name="destiny" type="text" placeholder="Informe o local de destino" />
               </article>
 
               <article>
                 <label htmlFor="">E-mail</label>
-                <input type="text" placeholder="Digite seu e-mail" />
+                <input name="email" type="text" placeholder="Digite seu e-mail" />
               </article>
 
               <article>
                 <label htmlFor="">Telefone</label>
-                <input type="text" placeholder="(64) 9XXXX-XXXX" />
+                <input name="phone" type="text" placeholder="(64) 9XXXX-XXXX" />
               </article>
 
               <article>
                 <label htmlFor="">Assunto</label>
-                <input type="text" placeholder="Assunto" />
+                <input name="subject" type="text" placeholder="Assunto" />
               </article>
 
               <article>
                 <label htmlFor="">Mensagem</label>
 
                 <textarea
-                  name="mensagem"
+                  name="message"
                   id="mensagem"
                   placeholder="Mensagem"
                 />
               </article>
             </div>
 
-            <button>Solicitar orçamento</button>
+            <button type='submit'>Solicitar orçamento</button>
           </div>
-        </div>
+        </form>
       </section>
       <Place />
     </div>

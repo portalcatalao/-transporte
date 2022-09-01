@@ -1,37 +1,35 @@
-import Link from "next/link";
-
-export default function supplierRegistration() {
+export default function SupplierRegistration() {
   return (
     <section>
       <span className="title">CADASTRO DE FORNECEDORES</span>
-      <div className="formContainer">
+      <form action="/api/cadastro-fornecedores" method="POST" className="formContainer" encType="multipart/form-data">
         <p>Nos envie uma mensagem</p>
 
         <div className="formContent">
           <div className="formInput">
             <article>
               <label htmlFor="">Nome</label>
-              <input type="text" placeholder="Digite seu nome completo" />
+              <input name="name" type="text" placeholder="Digite seu nome completo" />
             </article>
 
             <article>
               <label htmlFor="">E-mail</label>
-              <input type="text" placeholder="Digite seu e-mail" />
+              <input name="email" type="text" placeholder="Digite seu e-mail" />
             </article>
 
             <article>
               <label htmlFor="">Telefone</label>
-              <input type="text" placeholder="(64) 9XXXX-XXXX" />
+              <input name="phone" type="text" placeholder="(64) 9XXXX-XXXX" />
             </article>
 
             <article>
               <label htmlFor="">Assunto</label>
-              <input type="text" placeholder="Assunto" />
+              <input name="subject" type="text" placeholder="Assunto" />
             </article>
 
             <article>
               <label htmlFor="">Mensagem</label>
-              <input type="text" placeholder="Mensagem" />
+              <input name="message" type="text" placeholder="Mensagem" />
             </article>
 
             <article>
@@ -47,11 +45,9 @@ export default function supplierRegistration() {
             </article>
           </div>
 
-          <Link href="/">
-            <button>Enviar</button>
-          </Link>
+          <button type="submit">Enviar</button>
         </div>
-      </div>
+      </form>
     </section>
   );
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "react-feather";
 import styles from "./styles.module.scss";
 
-export default function publicTransportNumber() {
+export default function PublicTransportNumber() {
   return (
     <section>
       <span className="title">TRANSPORTE URBANO</span>

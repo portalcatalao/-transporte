@@ -1,17 +1,18 @@
-import Link from "next/link";
 
-export default function workWithUs() {
+
+export default function WorkWithUs() {
   return (
     <section>
       <span className="title">TRABALHE CONOSCO</span>
 
-      <div className="formContainer">
+      <form action="/api/trabalhe-conosco" method="POST" className="formContainer" encType="multipart/form-data">
         <p>Preencha com seus dados</p>
         <div className="formContent">
           <div className="formInput">
             <article>
               <label htmlFor="">Área de interesse</label>
               <input
+                name="interestArea"
                 type="text"
                 placeholder="Qual o cargo pretendido"
                 required
@@ -21,6 +22,7 @@ export default function workWithUs() {
             <article>
               <label htmlFor="">Nome</label>
               <input
+                name="name"
                 type="text"
                 placeholder="Digite seu nome completo"
                 required
@@ -29,12 +31,22 @@ export default function workWithUs() {
 
             <article>
               <label htmlFor="">Telefone</label>
-              <input type="tel" placeholder="(64) 9XXXX-XXXX" required />
+              <input
+                name="phone"
+                type="tel"
+                placeholder="(64) 9XXXX-XXXX"
+                required
+              />
             </article>
 
             <article>
               <label htmlFor="">Mensagem</label>
-              <input type="text" placeholder="Mensagem" required />
+              <input
+                name="message"
+                type="text"
+                placeholder="Mensagem"
+                required
+              />
             </article>
 
             <article>
@@ -49,12 +61,9 @@ export default function workWithUs() {
               />
             </article>
           </div>
-
-          <Link href="/">
-            <button>Enviar currículo</button>
-          </Link>
+          <button type='submit'>Enviar currículo</button>
         </div>
-      </div>
+      </form>
     </section>
   );
 }
