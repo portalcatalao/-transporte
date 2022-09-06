@@ -18,7 +18,7 @@
 
     padding: 9rem 0 0 7rem;
 
-    div {
+    .headerBanner {
       display: flex;
       flex-direction: column;
 
@@ -61,12 +61,16 @@
     article {
       width: 100%;
 
-      div {
+      .headerBanner {
         padding: 4rem 0 0 0 0;
         span {
           font-size: 3rem;
           line-height: 3.625rem;
         }
+      }
+      .logotipo {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -76,6 +80,10 @@
     height: 590px;
     article {
       padding: 1rem 1.5rem;
+      .logotipo {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
@@ -85,6 +93,11 @@
     height: 590px;
     article {
       padding: 0 1rem;
+
+      .logotipo {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
