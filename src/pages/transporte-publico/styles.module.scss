@@ -25,19 +25,21 @@
   display: flex;
   width: 100%;
 
-  justify-content: center;
+  gap: 10rem;
+
+  justify-content: space-between;
   align-items: center;
 
   margin: 4rem 0;
+}
 
-  .calendarContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.calendarContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    gap: 2rem;
-  }
+  gap: 2rem;
 }
 
 .headerCalendar {
@@ -85,7 +87,7 @@
     display: flex;
     justify-content: space-between;
 
-    gap: 6.5rem;
+    gap: 3.5rem;
     height: 5rem;
 
     button {
@@ -96,7 +98,7 @@
       padding: 32px;
       gap: 8px;
 
-      width: 208px;
+      width: 175px;
       height: 80px;
 
       border-radius: 4px;
@@ -114,6 +116,54 @@
         color: var(--white);
         background: var(--red-500);
       }
+    }
+  }
+}
+
+.resultContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+
+  gap: 3rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    span {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1rem;
+      color: var(--red-500);
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      color: var(--gray-600);
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    background: var(--red-500);
+
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--white);
+
+    &:hover {
+      background: var(--red-700);
     }
   }
 }

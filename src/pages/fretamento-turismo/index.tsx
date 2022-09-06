@@ -1,7 +1,4 @@
 import styles from "./styles.module.scss";
-
-import Place from "../../components/Place";
-
 import Router from "next/router";
 
 export default function CharterAndTourism() {

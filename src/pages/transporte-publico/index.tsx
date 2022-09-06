@@ -53,6 +53,45 @@ export default function PublicTransportNumber() {
             </div>
           </div>
         </div>
+        <div className={styles.resultContent}>
+          <div>
+            <span>Resultados anual de 2022</span>
+            <article>
+              <p>
+                <strong>Total de viagens: </strong> 320
+              </p>
+
+              <p>
+                <strong>Km rodados: </strong>3.823
+              </p>
+              <p>
+                <strong>Total de passageiros: </strong>10.820
+              </p>
+              <p>
+                <strong>Gratuidades: </strong>6.522
+              </p>
+            </article>
+          </div>
+          <div>
+            <span>Resultados de Maio</span>
+            <article>
+              <p>
+                <strong>Total de viagens: </strong> 320
+              </p>
+
+              <p>
+                <strong>Km rodados: </strong>3.823
+              </p>
+              <p>
+                <strong>Total de passageiros: </strong>10.820
+              </p>
+              <p>
+                <strong>Gratuidades: </strong>6.522
+              </p>
+            </article>
+          </div>
+          <button type="submit">Solicitar orçamento</button>
+        </div>
       </div>
     </section>
   );
