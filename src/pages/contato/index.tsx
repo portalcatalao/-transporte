@@ -67,6 +67,35 @@ export default function Contact() {
             </div>
           </div>
         </div>
+
+        <div className={styles.alsoAcess}>
+          <div className={styles.link}>
+            <span>Acesse também:</span>
+            <div>
+              <Link href="/sap-ouvidoria">
+                <p>Sugestões e reclamações</p>
+              </Link>
+              <Link href="/cadastro-fornecedores">
+                <p>Fornecedores</p>
+              </Link>
+              <Link href="/trabalhe-conosco">
+                <p>Trabalhe conosco</p>
+              </Link>
+              <Link href="http://00347.itstransdata.com:34701/TDMaxWebCommerce/Default.aspx">
+                <p>Compra de passagem</p>
+              </Link>
+            </div>
+          </div>
+          <article>
+            <span>Como estou dirigindo</span>
+            <p>SAP/Ouvidoria ou pelo e-mail sac@transduartego.com.br</p>
+          </article>
+          <article>
+            <span>Terminal de integração</span>
+            <p>Av. Raulina Fonseca Paschoal, s/nº, Centro</p>
+            <p>Contato: (64) 3442-8875</p>
+          </article>
+        </div>
       </div>
     </section>
   );

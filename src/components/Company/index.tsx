@@ -62,8 +62,6 @@ export default function Company() {
               mercado do ramo de transporte.
             </p>
           </div>
-
-          <img src="/grupo-transduarte.png" alt="" />
         </div>
       </div>
     </section>

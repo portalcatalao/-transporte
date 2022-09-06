@@ -33,7 +33,7 @@
 
     cursor: pointer;
 
-    span {
+    svg {
       font-weight: 600;
       font-size: 1.5rem;
 
@@ -76,6 +76,13 @@
 
     &:hover {
       background: var(--red-700);
+    }
+  }
+
+  article {
+    span {
+      font-weight: bold;
+      text-decoration: underline;
     }
   }
 }

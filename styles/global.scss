@@ -189,14 +189,20 @@ a {
     max-width: 1100px;
     display: flex;
     gap: 1rem;
+    object-fit: scale-down;
 
     margin: 0 3rem 3rem 3rem;
 
     .swiper-slide {
       margin: 0;
-      max-width: 335px;
+      max-width: 320px;
+      object-fit: scale-down;
 
       overflow: hidden;
+
+      img {
+        width: 100%;
+      }
     }
   }
 

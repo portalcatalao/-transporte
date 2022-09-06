@@ -23,12 +23,16 @@ export default function Header() {
       <div className={styles.headerContainer}>
         <div className={styles.headerContent}>
           <Link href="/">
-            <img src="logo.svg" alt="Logotipo do Grupo Transduarte" />
+            <img
+              src="logotestando.png
+            "
+              alt="Logotipo do Grupo Transduarte"
+            />
           </Link>
           <nav ref={navRef} className="fixed-top">
             <Link href="/">
               <li>
-                <Link href="/enterprise" onClick={showNavBar}>
+                <Link href="/empresa" onClick={showNavBar}>
                   <ul className={styles.menuItem}>
                     <p>A Empresa</p>
                     <ChevronDown />

@@ -33,7 +33,8 @@ export default function Fleet() {
               },
 
               1439: {
-                slidesPerView: 3,
+                slidesPerView: 3.2,
+                slidesPerGroup: 2,
               },
 
               1024: {
@@ -52,25 +53,50 @@ export default function Fleet() {
             }}
           >
             <SwiperSlide>
-              <img src="/bus-1.png" alt="" />
+              <img src="/frota/frota-1.jpg" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/bus-1.png" alt="" />
+              <img src="/frota/frota-2.jpg" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/bus-1.png" alt="" />
+              <img src="/frota/frota-3.jpg" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/bus-1.png" alt="" />
+              <img src="/frota/frota-4.jpg" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/bus-1.png" alt="" />
+              <img src="/frota/frota-5.jpg" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/bus-1.png" alt="" />
+              <img src="/frota/frota-6.jpg" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="/bus-1.png" alt="" />
+              <img src="/frota/frota-7.jpg" alt="" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img src="/frota/frota-8.jpg" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/frota/frota-9.jpg" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/frota/frota-10.jpg" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/frota/frota-11.jpg" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/frota/frota-12.jpg" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/frota/frota-13.jpg" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/frota/frota-14.jpg" alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/frota/frota-15.jpg" alt="" />
             </SwiperSlide>
           </Swiper>
         </div>

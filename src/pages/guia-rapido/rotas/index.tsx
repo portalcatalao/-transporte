@@ -8,7 +8,7 @@ export default function guideFour() {
       <p className="subtitle">Mapa das rotas</p>
 
       <div className={styles.guideContent}>
-        <Image
+        <img
           src="/map-route.png"
           alt="Imagem de uma rota no mapa em um celular"
         />

@@ -13,6 +13,7 @@ export default function Banner() {
           Contamos com uma frota de 162 veículos e 183 colaboradores para
           desenvolver constantemente a melhor formar de lhe atender.
         </p>
+        <img src="grupo-transduarte.png" alt="Logotipo do Grupo Transduarte" />
       </article>
     </div>
   );

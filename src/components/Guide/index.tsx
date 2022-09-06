@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CreditCard, DollarSign, Map, PhoneCall } from "react-feather";
 import styles from "../Guide/styles.module.scss";
 
 export default function Guide() {
@@ -7,33 +8,33 @@ export default function Guide() {
       <span className={styles.title}>GUIA RÁPIDO</span>
 
       <div className={styles.listGuide}>
-        <Link href="/guideOne">
+        <Link href="/guia-rapido/recarregar-cartao">
           <article>
-            <span>1</span>
+            <CreditCard />
             <p>Como recarregar o cartão</p>
             <p>Saiba mais</p>
           </article>
         </Link>
 
-        <Link href="/guideTwo">
+        <Link href="/guia-rapido/sap-ouvidorias">
           <article>
-            <span>2</span>
-            <p>Criação do SAP</p>
+            <PhoneCall />
+            <p>Serviço de Atendimento do Passageiro (SAP)/Ouvidoria</p>
             <p>Saiba mais</p>
           </article>
         </Link>
 
-        <Link href="/guideThree">
+        <Link href="/guia-rapido/transporte-gratuito">
           <article>
-            <span>3</span>
+            <DollarSign />
             <p>Direito à gratuidade do transporte</p>
             <p>Saiba mais</p>
           </article>
         </Link>
 
-        <Link href="/guideFour">
+        <Link href="/guia-rapido/rotas">
           <article>
-            <span>4</span>
+            <Map />
             <p>Mapa das rotas</p>
             <p>Saiba mais</p>
           </article>

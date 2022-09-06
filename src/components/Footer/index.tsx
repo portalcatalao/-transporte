@@ -24,7 +24,7 @@ export default function Footer() {
           </article>
 
           <article className={styles.contact}>
-            <span>Garagem</span>
+            <span>Administração/Garagem</span>
             <div>
               <MapPin />
               <p>Avenida VB 1 - Vereda Buritis Catalão/GO</p>

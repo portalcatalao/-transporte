@@ -4,24 +4,23 @@ import Place from "../../components/Place";
 
 import Router from "next/router";
 
-
 export default function CharterAndTourism() {
   const handleSubmit = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
     const formData = new FormData(event.target);
-    Object.keys(event).forEach(key => {
+    Object.keys(event).forEach((key) => {
       formData.append(key, event[key]);
     });
 
     const response = await fetch("/api/solicitar-orcamento", {
       method: "POST",
       body: formData,
-    })
+    });
 
     const json = await response.json();
     if (json.success) {
-      Router.push('/')
+      Router.push("/");
     }
   };
 
@@ -49,23 +48,45 @@ export default function CharterAndTourism() {
           </article>
         </div>
 
-        <form onSubmit={handleSubmit} className="formContainer" encType="multipart/form-data">
+        <div>
+          <p>
+            Caso queira o atendimento pelo WhatsApp, ligue (64) 9xxxxxxxx, de
+            segunda a sexta-feira, das 8h às 18h.{" "}
+          </p>
+        </div>
+        <form
+          onSubmit={handleSubmit}
+          className="formContainer"
+          encType="multipart/form-data"
+        >
           <p>Faça um orçamento</p>
           <div className="formContent">
             <div className="formInput">
               <article>
                 <label htmlFor="">Origem</label>
-                <input name="origin" type="text" placeholder="Informe o local de origem" />
+                <input
+                  name="origin"
+                  type="text"
+                  placeholder="Informe o local de origem"
+                />
               </article>
 
               <article>
                 <label htmlFor="">Destino</label>
-                <input name="destiny" type="text" placeholder="Informe o local de destino" />
+                <input
+                  name="destiny"
+                  type="text"
+                  placeholder="Informe o local de destino"
+                />
               </article>
 
               <article>
                 <label htmlFor="">E-mail</label>
-                <input name="email" type="email" placeholder="Digite seu e-mail" />
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Digite seu e-mail"
+                />
               </article>
 
               <article>
@@ -81,19 +102,14 @@ export default function CharterAndTourism() {
               <article>
                 <label htmlFor="">Mensagem</label>
 
-                <textarea
-                  name="message"
-                  id="mensagem"
-                  placeholder="Mensagem"
-                />
+                <textarea name="message" id="mensagem" placeholder="Mensagem" />
               </article>
             </div>
 
-            <button type='submit'>Solicitar orçamento</button>
+            <button type="submit">Solicitar orçamento</button>
           </div>
         </form>
       </section>
-      <Place />
     </div>
   );
 }
