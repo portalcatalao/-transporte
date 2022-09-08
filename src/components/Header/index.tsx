@@ -32,24 +32,24 @@ export default function Header() {
           <nav ref={navRef} className="fixed-top">
             <Link href="/">
               <li>
-                <Link href="/empresa" onClick={showNavBar}>
+                <Link href="/empresa">
                   <ul className={styles.menuItem}>
-                    <p>A Empresa</p>
+                    <p onClick={showNavBar}>A Empresa</p>
                     <ChevronDown />
                   </ul>
                 </Link>
 
                 <ul className={styles.subMenu}>
                   <Link href="/empresa">
-                    <p>Nossa história e valores</p>
+                    <p onClick={showNavBar}>Nossa história e valores</p>
                   </Link>
 
                   <Link href="/trabalhe-conosco">
-                    <p>Trabalhe conosco</p>
+                    <p onClick={showNavBar}>Trabalhe conosco</p>
                   </Link>
 
                   <Link href="/cadastro-fornecedores">
-                    <p>Cadastro de fornecedores</p>
+                    <p onClick={showNavBar}>Cadastro de fornecedores</p>
                   </Link>
                 </ul>
               </li>
@@ -57,45 +57,45 @@ export default function Header() {
 
             <Link href="/">
               <li>
-                <Link href="/guia-rapido" onClick={showNavBar}>
+                <Link href="/guia-rapido">
                   <ul className={styles.menuItem}>
-                    <p>Transporte urbano</p>
+                    <p onClick={showNavBar}>Transporte urbano</p>
                     <ChevronDown />
                   </ul>
                 </Link>
 
                 <ul className={styles.subMenu}>
                   <Link href="/guia-rapido">
-                    <p>Guia rápido</p>
+                    <p onClick={showNavBar}>Guia rápido</p>
                   </Link>
                   <Link href="/sap-ouvidoria">
-                    <p>SAP/Ouvidoria</p>
+                    <p onClick={showNavBar}>SAP/Ouvidoria</p>
                   </Link>
-                  <Link href="/transporte-publico">
-                    <p>Número de transporte coletivo</p>
+                  <Link href="/tela-em-construcao">
+                    <p onClick={showNavBar}>Número de transporte coletivo</p>
                   </Link>
                 </ul>
               </li>
             </Link>
 
-            <Link href="/fretamento-turismo" onClick={showNavBar}>
-              <p>Fretamento e Turismo</p>
+            <Link href="/fretamento-turismo">
+              <p onClick={showNavBar}>Fretamento e Turismo</p>
             </Link>
 
-            <Link href="/contato" onClick={showNavBar}>
-              <p>Contato</p>
+            <Link href="/contato">
+              <p onClick={showNavBar}>Contato</p>
             </Link>
 
             <div className={styles.socialMedia}>
-              <Link href="/" onClick={showNavBar}>
+              <Link href="/">
                 <Facebook />
               </Link>
 
-              <Link href="/" onClick={showNavBar}>
+              <Link href="/">
                 <Instagram />
               </Link>
 
-              <Link href="/" onClick={showNavBar}>
+              <Link href="/">
                 <Linkedin />
               </Link>
             </div>
