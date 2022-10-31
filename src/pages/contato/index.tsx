@@ -7,96 +7,134 @@ import {
   Mail,
   MapPin,
   Phone,
+  DollarSign,
+  Map,
+  PhoneCall,
+  CreditCard,
 } from "react-feather";
 
 import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section>
-      <span className="title">CONTATO</span>
-      <p className="subtitle">
-        Qual a melhor forma para atendê-lo com eficiência?
-      </p>
+    <>
+      <section className={styles.contactContainer}>
+        <div className={styles.contactHeader}>
+          <span>CONTATO</span>
+          <p>Qual a melhor forma para atendê-lo com eficiência?</p>
+        </div>
 
-      <div className={styles.contactContainer}>
-        <p>Presencial</p>
         <div className={styles.contactContent}>
-          <img src="/place.png" alt="" />
-          <div className={styles.card}>
-            <div className={styles.contact}>
-              <span>Escritório/Garagem</span>
-              <div>
+          <div className={styles.contactInfos}>
+            <div>
+              <span>Escritório e garagem</span>
+              <article>
                 <MapPin />
                 <p>Avenida VB 1 - Vereda Buritis Catalão/GO</p>
-              </div>
-              <div>
+              </article>
+
+              <article>
                 <Phone />
                 <p>(64)3411-3155</p>
-              </div>
+              </article>
 
-              <div>
+              <article>
                 <Mail />
                 <p>contato@transduartego.com.br</p>
-              </div>
+              </article>
             </div>
-            <div className={styles.socialMedia}>
-              <p>Redes sociais</p>
-              <div>
-                <Link href="/">
-                  <article>
-                    <Facebook />
-                    <p>Facebook</p>
-                  </article>
-                </Link>
-
-                <Link href="/">
-                  <article>
-                    <Instagram />
-                    <p>Instagram</p>
-                  </article>
-                </Link>
-
-                <Link href="/">
-                  <article>
-                    <Linkedin />
-                    <p>Linkedin</p>
-                  </article>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.alsoAcess}>
-          <div className={styles.link}>
-            <span>Acesse também:</span>
             <div>
-              <Link href="/sap-ouvidoria">
-                <p>Sugestões e reclamações</p>
+              <span>Redes sociais</span>
+              <Link href="/">
+                <article>
+                  <Facebook />
+                  <p>Facebook</p>
+                </article>
               </Link>
-              <Link href="/cadastro-fornecedores">
-                <p>Fornecedores</p>
+
+              <Link href="/">
+                <article>
+                  <Instagram />
+                  <p>Instagem</p>
+                </article>
               </Link>
-              <Link href="/trabalhe-conosco">
-                <p>Trabalhe conosco</p>
-              </Link>
-              <Link href="http://00347.itstransdata.com:34701/TDMaxWebCommerce/Default.aspx">
-                <p>Compra de passagem</p>
+
+              <Link href="/">
+                <article>
+                  <Linkedin />
+                  <p>Linkedin</p>
+                </article>
               </Link>
             </div>
           </div>
-          <article>
-            <span>Como estou dirigindo</span>
-            <p>SAP/Ouvidoria ou pelo e-mail sac@transduartego.com.br</p>
-          </article>
-          <article>
-            <span>Terminal de integração</span>
-            <p>Av. Raulina Fonseca Paschoal, s/nº, Centro</p>
-            <p>Contato: (64) 3442-8875</p>
-          </article>
+          <div className={styles.location}>
+            <p>localização</p>
+          </div>
         </div>
-      </div>
-    </section>
+
+        <div className={styles.otherInformation}>
+          <div>
+            <span>Como estou dirigindo?</span>
+            <p>SAP/Ouvidoria ou pelo email sac@transduartego.com.br</p>
+          </div>
+          <div>
+            <span>Terminal de integração</span>
+            <article>
+              <MapPin />
+              <p>Av. Raulina Fonseca Paschoal, s/nº, Centro</p>
+            </article>
+            <article>
+              <Phone />
+              <p>(64) 3442-8875</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section className="guideContainer">
+        <span>Acesse também</span>
+
+        <div className="listGuide">
+          <Link href="/guia-rapido/recarregar-cartao">
+            <div className="card">
+              <article>
+                <CreditCard />
+                <p>Como recarregar o cartão</p>
+              </article>
+              <p>Saiba mais</p>
+            </div>
+          </Link>
+
+          <Link href="sap">
+            <div className="card">
+              <article>
+                <PhoneCall />
+                <p>Serviço de Atendimento do Passageiro (SAP)</p>
+              </article>
+              <p>Saiba mais</p>
+            </div>
+          </Link>
+
+          <Link href="/guia-rapido/transporte-gratuito">
+            <div className="card">
+              <article>
+                <DollarSign />
+                <p>Direito à gratuidade do transporte</p>
+              </article>
+              <p>Saiba mais</p>
+            </div>
+          </Link>
+
+          <Link href="/guia-rapido/rotas">
+            <div className="card">
+              <article>
+                <Map />
+                <p>Mapa das rotas</p>
+              </article>
+              <p>Saiba mais</p>
+            </div>
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }

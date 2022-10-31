@@ -13,63 +13,50 @@ export default function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerContent}>
-        <div className={styles.topFooter}>
-          <article>
-            <img src="logo2.svg" alt="" />
-            <p>
-              A Transduarte é uma empresa focada em atender os usuários de
-              transporte coletivo de Catalão com segurança, pontualidade e
-              conforto.
-            </p>
-          </article>
+        <img src="logo.png" alt="" />
+        <p>
+          A Transduarte é uma empresa focada em atender os usuários de
+          transporte coletivo de Catalão com segurança, pontualidade e conforto.
+        </p>
+        <article className={styles.contact}>
+          <span>Administração/Garagem</span>
+          <div>
+            <MapPin />
+            <p>Avenida VB 1 - Vereda Buritis Catalão/GO</p>
+          </div>
+          <div>
+            <Phone />
+            <p>(64) 3411-3155</p>
+          </div>
 
-          <article className={styles.contact}>
-            <span>Administração/Garagem</span>
-            <div>
-              <MapPin />
-              <p>Avenida VB 1 - Vereda Buritis Catalão/GO</p>
-            </div>
-            <div>
-              <Phone />
-              <p>(64)3411-3155</p>
-            </div>
-
-            <div>
-              <Mail />
-              <p>atendimento@transduartego.com.br</p>
-            </div>
-          </article>
-        </div>
-
-        <div className={styles.middleFooter}>
-          <div className={styles.links}>
-            <Link href="/">
-              <p>A Empresa</p>
-            </Link>
-
-            <span>•</span>
-
-            <Link href="/urbanTransport">
-              <p>Transporte urbano</p>
-            </Link>
-
-            <span>•</span>
-
-            <Link href="/charterAndTourism">
-              <p>Fretamento e Turismo</p>
-            </Link>
-
-            <span>•</span>
-
-            <Link href="/contact">
-              <p>Contato</p>
-            </Link>
-
-            <span>•</span>
-
+          <div>
+            <Mail />
             <p>atendimento@transduartego.com.br</p>
           </div>
-          <div className={styles.socialMedia}>
+        </article>
+      </div>
+
+      <div className={styles.footerCopyright}>
+        <div className={styles.links}>
+          <Link href="/">
+            <p>A Empresa</p>
+          </Link>
+
+          <Link href="/urbanTransport">
+            <p>Transporte urbano</p>
+          </Link>
+
+          <Link href="/charterAndTourism">
+            <p>Fretamento e Turismo</p>
+          </Link>
+
+          <Link href="/contact">
+            <p>Contato</p>
+          </Link>
+
+          <p>atendimento@transduartego.com.br</p>
+
+          <div>
             <Link href="/">
               <Facebook />
             </Link>
@@ -83,11 +70,11 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-      </div>
-
-      <div className={styles.footerCopyright}>
-        <p>© Portal Catalão Internet Services.</p>
-        <p>Todos os direitos reservados.</p>
+        <div className={styles.copyright}>
+          <span>PUBLICADO EM 2022</span>
+          <span>Portal Catalão</span>
+          <p>Todos os direitos reservados</p>
+        </div>
       </div>
     </footer>
   );

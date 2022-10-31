@@ -1,0 +1,159 @@
+.sapContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 54px;
+
+  margin-top: 7.5rem;
+}
+
+.titleSap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 16px;
+
+  span {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    color: var(--red-700);
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    color: var(--gray-200);
+  }
+}
+
+.sapContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    span {
+      font-weight: 700;
+      font-size: 16px;
+
+      color: var(--red-700);
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h1 {
+        font-weight: 400;
+        font-size: 1rem;
+
+        color: var(--gray-200);
+
+        span {
+          font-weight: 700;
+          font-size: 1rem;
+
+          color: var(--red-500);
+        }
+      }
+    }
+  }
+
+  .media {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: var(--red-500);
+    }
+
+    article {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      gap: 8px;
+
+      font-weight: 400;
+      font-size: 1rem;
+      color: var(--gray-200);
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .listGuide {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    width: 100%;
+
+    article {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .listGuide {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+
+    article {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sapContainer {
+    gap: 3rem;
+  }
+
+  .sapContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .media {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+// @media only screen and (max-width: 767px) {
+//   .socialMedia {
+//     flex-direction: column;
+//     align-items: flex-start;
+
+//     div {
+//       flex-direction: column;
+//     }
+//   }
+// }

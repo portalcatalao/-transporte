@@ -1,0 +1,100 @@
+.transportContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 54px;
+
+  margin-top: 7.5rem;
+}
+
+.transportContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  gap: 32px;
+
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--gray-800);
+
+  h1 {
+    font-weight: 700;
+    font-size: 1rem;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .remark {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    span {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      text-decoration-line: underline;
+      color: var(--gray-800);
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: var(--gray-800);
+    }
+  }
+
+  .laws {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 16px;
+
+    p {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      color: var(--gray-800);
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      gap: 30px;
+
+      article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: 1rem;
+
+        svg {
+          color: var(--red-500);
+        }
+
+        span {
+          font-weight: 700;
+          font-size: 1rem;
+          line-height: 19px;
+
+          color: var(--gray-800);
+        }
+      }
+    }
+  }
+}

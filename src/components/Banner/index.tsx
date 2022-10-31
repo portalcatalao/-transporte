@@ -2,22 +2,23 @@ import styles from "../Banner/styles.module.scss";
 
 export default function Banner() {
   return (
-    <div className={styles.bannerContainer}>
-      <article>
-        <div className={styles.headerBanner}>
-          <span>Grupo Transduarte</span>
-          <p>Fretamento executivo e transporte coletivo.</p>
-        </div>
+    <section className={styles.bannerContainer}>
+      <div className={styles.bannerContent}>
+        <p className={styles.tag}>Fretamento executivo e transporte coletivo</p>
+        <p className={styles.featuredPhrase}>
+          Mais de 40 anos de experiência no mercado de transporte e turismo!
+        </p>
         <p>
           Somos uma empresa com base sólida e desempenho crescente em Catalão.
           Contamos com uma frota de 162 veículos e 183 colaboradores para
           desenvolver constantemente a melhor formar de lhe atender.
         </p>
-        <div className={styles.logotipo}>
-          <img src="/banner/gt-1.png" alt="Logotipo do Grupo Transduarte" />
-          <img src="/banner/gt-2.png" alt="Logotipo do Grupo Transduarte" />
-        </div>
-      </article>
-    </div>
+        <article>
+          <button>Conheça nossa frota</button>
+          <button>Conheça nossos serviços</button>
+        </article>
+      </div>
+      <div className={styles.bannerImage}>container</div>
+    </section>
   );
 }

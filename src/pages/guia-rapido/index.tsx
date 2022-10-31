@@ -1,16 +1,56 @@
 import Link from "next/link";
+
+import styles from "./styles.module.scss";
 import { CreditCard, DollarSign, Map, PhoneCall } from "react-feather";
-import Guide from "../../components/Guide";
-import styles from "../../components/Guide/styles.module.scss";
 
 export default function quickGuide() {
   return (
-    <>
-      <section>
-        <span className="title">TRANSPORTE URBANO</span>
-      </section>
+    <section className={styles.guideContainer}>
+      <span className={styles.guideHeader}>
+        Guia rápido do transporte urbano
+      </span>
 
-      <Guide />
-    </>
+      <div className="listGuide">
+        <Link href="/guia-rapido/recarregar-cartao">
+          <div className="card">
+            <article>
+              <CreditCard />
+              <p>Como recarregar o cartão</p>
+            </article>
+            <p>Saiba mais</p>
+          </div>
+        </Link>
+
+        <Link href="/sap-ouvidoria">
+          <div className="card">
+            <article>
+              <PhoneCall />
+              <p>Serviço de Atendimento do Passageiro (SAP)/Ouvidoria</p>
+            </article>
+            <p>Saiba mais</p>
+          </div>
+        </Link>
+
+        <Link href="/guia-rapido/transporte-gratuito">
+          <div className="card">
+            <article>
+              <DollarSign />
+              <p>Direito à gratuidade do transporte</p>
+            </article>
+            <p>Saiba mais</p>
+          </div>
+        </Link>
+
+        <Link href="/guia-rapido/rotas">
+          <div className="card">
+            <article>
+              <Map />
+              <p>Mapa das rotas</p>
+            </article>
+            <p>Saiba mais</p>
+          </div>
+        </Link>
+      </div>
+    </section>
   );
 }

@@ -34,7 +34,7 @@ export default function Header() {
               <li>
                 <Link href="/empresa">
                   <ul className={styles.menuItem}>
-                    <p onClick={showNavBar}>A Empresa</p>
+                    <p onClick={showNavBar}>Empresa</p>
                     <ChevronDown />
                   </ul>
                 </Link>
@@ -55,6 +55,14 @@ export default function Header() {
               </li>
             </Link>
 
+            <Link href="/fretamento">
+              <p onClick={showNavBar}>Fretamento</p>
+            </Link>
+
+            <Link href="/turismo">
+              <p onClick={showNavBar}>Turismo</p>
+            </Link>
+
             <Link href="/">
               <li>
                 <Link href="/guia-rapido">
@@ -66,20 +74,23 @@ export default function Header() {
 
                 <ul className={styles.subMenu}>
                   <Link href="/guia-rapido">
-                    <p onClick={showNavBar}>Guia rápido</p>
+                    <p onClick={showNavBar}>Guia rápido do transporte urbano</p>
                   </Link>
-                  <Link href="/sap-ouvidoria">
-                    <p onClick={showNavBar}>SAP/Ouvidoria</p>
+                  <Link href="/sap">
+                    <p onClick={showNavBar}>
+                      Serviço de Atendimento do Passageiro
+                    </p>
+                  </Link>
+                  <Link href="/ouvidoria">
+                    <p onClick={showNavBar}>Ouvidoria</p>
                   </Link>
                   <Link href="/tela-em-construcao">
-                    <p onClick={showNavBar}>Número de transporte coletivo</p>
+                    <p onClick={showNavBar}>
+                      Transparência do transporte público
+                    </p>
                   </Link>
                 </ul>
               </li>
-            </Link>
-
-            <Link href="/fretamento-turismo">
-              <p onClick={showNavBar}>Fretamento e Turismo</p>
             </Link>
 
             <Link href="/contato">

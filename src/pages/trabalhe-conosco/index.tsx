@@ -1,30 +1,35 @@
 import Router from "next/router";
+import styles from "./styles.module.scss";
 
 export default function WorkWithUs() {
   const handleSubmit = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
     const formData = new FormData(event.target);
-    Object.keys(event).forEach(key => {
+    Object.keys(event).forEach((key) => {
       formData.append(key, event[key]);
     });
 
     const response = await fetch("/api/trabalhe-conosco", {
       method: "POST",
       body: formData,
-    })
+    });
 
     const json = await response.json();
     if (json.success) {
-      Router.push('/')
+      Router.push("/");
     }
   };
 
   return (
-    <section>
-      <span className="title">TRABALHE CONOSCO</span>
+    <section className="formsContainer">
+      <span className="title">Trabalhe conosco</span>
 
-      <form onSubmit={handleSubmit} className="formContainer" encType="multipart/form-data">
+      <form
+        onSubmit={handleSubmit}
+        className="formContainer"
+        encType="multipart/form-data"
+      >
         <p>Preencha com seus dados</p>
         <div className="formContent">
           <div className="formInput">
@@ -80,7 +85,7 @@ export default function WorkWithUs() {
               />
             </article>
           </div>
-          <button type='submit'>Enviar currículo</button>
+          <button type="submit">Enviar currículo</button>
         </div>
       </form>
     </section>

@@ -1,5 +1,5 @@
 .flagContainer {
-  background: var(--red-500);
+  background: #950000;
   padding: 4.5rem 7rem;
   margin-top: 5.5rem;
 
@@ -9,14 +9,29 @@
   align-items: center;
   justify-content: space-between;
 
-  p {
-    font-weight: 700;
-    font-size: 3.5rem;
-    line-height: 4rem;
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 
-    color: var(--white);
+    gap: 1rem;
 
-    width: 32rem;
+    width: 45%;
+
+    p {
+      font-weight: 700;
+      font-size: 3.5rem;
+      line-height: 4rem;
+
+      color: var(--white);
+    }
+
+    svg {
+      width: 100px;
+      height: 100px;
+
+      color: var(--white);
+    }
   }
 
   button {
@@ -34,10 +49,10 @@
 
     font-weight: 700;
     font-size: 1rem;
-    color: var(--gray-800);
+    color: #950000;
 
     &:hover {
-      background: var(--red-700);
+      background: #b61c1f;
       color: var(--white);
     }
   }
@@ -54,6 +69,10 @@
   .flagContainer {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+
+    div {
+      width: 100%;
+    }
   }
 }
 
@@ -68,8 +87,12 @@
 
     width: 100%;
 
-    p {
+    div {
       width: 100%;
+
+      p {
+        width: 100%;
+      }
     }
 
     button {

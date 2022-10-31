@@ -2,40 +2,52 @@ import Router from "next/router";
 
 export default function SupplierRegistration() {
   const handleSubmit = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
     const formData = new FormData(event.target);
-    Object.keys(event).forEach(key => {
+    Object.keys(event).forEach((key) => {
       formData.append(key, event[key]);
     });
 
     const response = await fetch("/api/cadastro-fornecedores", {
       method: "POST",
       body: formData,
-    })
+    });
 
     const json = await response.json();
     if (json.success) {
-      Router.push('/')
+      Router.push("/");
     }
   };
 
   return (
-    <section>
-      <span className="title">CADASTRO DE FORNECEDORES</span>
-      <form onSubmit={handleSubmit} className="formContainer" encType="multipart/form-data">
+    <section className="formsContainer">
+      <span className="title">Cadastro de fornecedores</span>
+      <form
+        onSubmit={handleSubmit}
+        className="formContainer"
+        encType="multipart/form-data"
+      >
         <p>Nos envie uma mensagem</p>
 
         <div className="formContent">
           <div className="formInput">
             <article>
               <label htmlFor="">Nome</label>
-              <input name="name" type="text" placeholder="Digite seu nome completo" />
+              <input
+                name="name"
+                type="text"
+                placeholder="Digite seu nome completo"
+              />
             </article>
 
             <article>
               <label htmlFor="">E-mail</label>
-              <input name="email" type="email" placeholder="Digite seu e-mail" />
+              <input
+                name="email"
+                type="email"
+                placeholder="Digite seu e-mail"
+              />
             </article>
 
             <article>

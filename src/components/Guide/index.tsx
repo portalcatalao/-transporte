@@ -1,43 +1,50 @@
 import Link from "next/link";
 import { CreditCard, DollarSign, Map, PhoneCall } from "react-feather";
-import styles from "../Guide/styles.module.scss";
 
 export default function Guide() {
   return (
-    <section className={styles.guideContainer}>
-      <span className={styles.title}>GUIA RÁPIDO</span>
+    <section className="guideContainer">
+      <span>GUIA RÁPIDO DO TRANSPORTE URBANO</span>
 
-      <div className={styles.listGuide}>
+      <div className="listGuide">
         <Link href="/guia-rapido/recarregar-cartao">
-          <article>
-            <CreditCard />
-            <p>Como recarregar o cartão</p>
+          <div className="card">
+            <article>
+              <CreditCard />
+              <p>Como recarregar o cartão</p>
+            </article>
             <p>Saiba mais</p>
-          </article>
+          </div>
         </Link>
 
-        <Link href="/guia-rapido/sap-ouvidorias">
-          <article>
-            <PhoneCall />
-            <p>Serviço de Atendimento do Passageiro (SAP)/Ouvidoria</p>
+        <Link href="/sap">
+          <div className="card">
+            <article>
+              <PhoneCall />
+              <p>Serviço de Atendimento do Passageiro (SAP)/Ouvidoria</p>
+            </article>
             <p>Saiba mais</p>
-          </article>
+          </div>
         </Link>
 
         <Link href="/guia-rapido/transporte-gratuito">
-          <article>
-            <DollarSign />
-            <p>Direito à gratuidade do transporte</p>
+          <div className="card">
+            <article>
+              <DollarSign />
+              <p>Direito à gratuidade do transporte</p>
+            </article>
             <p>Saiba mais</p>
-          </article>
+          </div>
         </Link>
 
         <Link href="/guia-rapido/rotas">
-          <article>
-            <Map />
-            <p>Mapa das rotas</p>
+          <div className="card">
+            <article>
+              <Map />
+              <p>Mapa das rotas</p>
+            </article>
             <p>Saiba mais</p>
-          </article>
+          </div>
         </Link>
       </div>
     </section>

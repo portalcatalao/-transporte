@@ -19,7 +19,7 @@ export default function Home() {
         <Company />
         <Servicing />
         <Flag />
-        <Fleet />
+        {/* <Fleet /> */}
         <Guide />
         <Place />
       </main>
