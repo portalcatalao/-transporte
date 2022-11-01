@@ -10,8 +10,8 @@ export default function Enterprise() {
         <span>Minha família transportando pessoas</span>
         <div>
           <p>
-            "Quando meu avô, Antônio Miranda, fundou a Transduarte, em 1980, meu
-            tio Dorival foi administrar a empresa. Nessa época, o meu pai
+            &quotQuando meu avô, Antônio Miranda, fundou a Transduarte, em 1980,
+            meu tio Dorival foi administrar a empresa. Nessa época, o meu pai
             Dorivan era caminhoneiro e vivia na estrada. Às vezes, ele ficava
             até 15 dias sem vir em casa porque estava trabalhando. Até que em
             1988, a pedido do meu avô, meu pai resolveu ficar só na
@@ -36,7 +36,8 @@ export default function Enterprise() {
             veias e sim óleo diesel.
           </p>
           <p>
-            Quero continuar o legado dele: Minha família transportando pessoas."
+            Quero continuar o legado dele: Minha família transportando
+            pessoas.&quot
           </p>
           <h3>Diretora presidente da Transduarte Fretamento e Transporte</h3>
         </div>
