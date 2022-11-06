@@ -8,11 +8,35 @@ export default function guideFour() {
       <p className="subtitle">Mapa das rotas</p>
 
       <div className={styles.guideContent}>
-        <img
-          src="/map-route.png"
-          alt="Imagem de uma rota no mapa em um celular"
-        />
-        <button>Download</button>
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1AtXyxMdmIzGbkCrse0nH_gMK42lnRYs&ehbc=2E312F"
+          width="640"
+          height="480"
+        ></iframe>
+
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1shlfWbRYrNy5wW6n1r6sOeHdFJvWAUM&ehbc=2E312F"
+          width="640"
+          height="480"
+        ></iframe>
+
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1SOCYK_h0DIK6QWbIhdVmLnkDzpklxiw&ehbc=2E312F"
+          width="640"
+          height="480"
+        ></iframe>
+
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1pQkDi9wjLBCX9Ucup7M99flUDfvcHk0&ehbc=2E312F"
+          width="640"
+          height="480"
+        ></iframe>
+
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1QjK4tWtHDRzEz8iJbsgl11fwhYOKBgU&ehbc=2E312F"
+          width="640"
+          height="480"
+        ></iframe>
       </div>
     </section>
   );
