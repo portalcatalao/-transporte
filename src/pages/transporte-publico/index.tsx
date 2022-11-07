@@ -1,11 +1,9 @@
-import Link from "next/link";
-import { ChevronLeft, ChevronRight } from "react-feather";
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import styles from "./styles.module.scss";
 
-export default function PublicTransportNumber() {
+export default function TelaEmConstrucao() {
   const [date, setDate] = useState([new Date(2022, 1, 1)]);
   return (
     <section>
@@ -18,46 +16,7 @@ export default function PublicTransportNumber() {
           viagens no perímetro urbano:
         </p>
       </div>
-
       <div className={styles.calendarContainer}>
-        <div className={styles.calendarContent}>
-          <div className={styles.headerCalendar}>
-            <Link href="/">
-              <button>
-                <ChevronLeft />
-              </button>
-            </Link>
-            <span>2022</span>
-            <Link href="/">
-              <button>
-                <ChevronRight />
-              </button>
-            </Link>
-          </div>
-          <div className={styles.bodyCalendar}>
-            <div>
-              <button>Janeiro</button>
-              <button>Fevereiro</button>
-              <button>Março</button>
-            </div>
-            <div>
-              <button>Abril</button>
-              <button>Maio</button>
-              <button>Junho</button>
-            </div>
-            <div>
-              <button>Julho</button>
-              <button>Agosto</button>
-              <button>Setembro</button>
-            </div>
-            <div>
-              <button>Outubro</button>
-              <button>Novembro</button>
-              <button>Dezembro</button>
-            </div>
-          </div>
-        </div>
-        {/* 
         <div className={styles.calendarContent}>
           <Calendar
             onChange={setDate}
@@ -70,45 +29,41 @@ export default function PublicTransportNumber() {
             prev2Label="<<"
             prev2AriaLabel="Ano anterior" // will not allow date before 1st July 2015
           />
-        </div> */}
-        <div className={styles.resultContent}>
+        </div>
+        <div className={styles.calendarResult}>
           <div>
-            <span>Resultados anual de 2022</span>
             <article>
+              <span>Anual</span>
               <p>
-                <strong>Total de viagens: </strong> 320
-              </p>
-
-              <p>
-                <strong>Km rodados: </strong>3.823
+                <strong>Total de viagem: </strong> 320
               </p>
               <p>
-                <strong>Total de passageiros: </strong>10.820
+                <strong>Km rodados: </strong> 320.000
               </p>
               <p>
-                <strong>Gratuidades: </strong>6.522
+                <strong>Total de passageiros: </strong> 32
+              </p>
+              <p>
+                <strong>Gratuidades: </strong> 32.000
+              </p>
+            </article>
+            <article>
+              <span>Novembro</span>
+              <p>
+                <strong>Total de viagem: </strong> 320
+              </p>
+              <p>
+                <strong>Km rodados: </strong> 320.000
+              </p>
+              <p>
+                <strong>Total de passageiros: </strong> 32
+              </p>
+              <p>
+                <strong>Gratuidades: </strong> 32.000
               </p>
             </article>
           </div>
-          <div>
-            <span>Resultados de Maio</span>
-            <article>
-              <p>
-                <strong>Total de viagens: </strong> 320
-              </p>
-
-              <p>
-                <strong>Km rodados: </strong>3.823
-              </p>
-              <p>
-                <strong>Total de passageiros: </strong>10.820
-              </p>
-              <p>
-                <strong>Gratuidades: </strong>6.522
-              </p>
-            </article>
-          </div>
-          <button type="submit">Solicitar orçamento</button>
+          <button type="submit">Baixar prestação de contas</button>
         </div>
       </div>
     </section>

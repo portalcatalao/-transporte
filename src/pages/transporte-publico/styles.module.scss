@@ -4,6 +4,7 @@
 
   gap: 1.5rem;
   margin-top: 3.5rem;
+  margin-bottom: 2rem;
 
   span {
     font-weight: 700;
@@ -23,147 +24,72 @@
 
 .calendarContainer {
   display: flex;
-  width: 100%;
-
-  gap: 10rem;
-
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
 
-  margin: 4rem 0;
-}
+  // gap: 17rem;
 
-.calendarContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 2rem;
-}
-
-.headerCalendar {
-  display: flex;
-  width: 100%;
-
-  justify-content: space-between;
-  align-items: center;
-
-  span {
-    font-weight: 700;
-    font-size: 1.5rem;
-
-    text-align: center;
-
-    color: var(--gray-800);
+  .calendarContent {
+    width: 50%;
   }
-
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    padding: 0.5rem;
-
-    svg {
-      width: 2rem;
-      height: 2rem;
-    }
-
-    &:hover {
-      color: var(--white);
-      background: var(--gray-800);
-    }
-  }
-}
-
-.bodyCalendar {
-  display: flex;
-  flex-direction: column;
-
-  gap: 2.5rem;
-
-  div {
-    display: flex;
-    justify-content: space-between;
-
-    gap: 3.5rem;
-    height: 5rem;
-
-    button {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 32px;
-      gap: 8px;
-
-      width: 175px;
-      height: 80px;
-
-      border-radius: 4px;
-      font-weight: 500;
-      font-size: 1rem;
-
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-      color: var(--gray-800);
-
-      &:hover,
-      &:focus {
-        color: var(--white);
-        background: var(--red-500);
-      }
-    }
-  }
-}
-
-.resultContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  height: 100%;
-
-  gap: 3rem;
-
-  div {
+  .calendarResult {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
 
-    span {
-      font-weight: 700;
-      font-size: 1.5rem;
-      line-height: 1rem;
-      color: var(--red-500);
+    gap: 3rem;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 5rem;
+
+      article {
+        span {
+          font-weight: 700;
+          font-size: 1.5rem;
+
+          color: var(--red-500);
+        }
+        p {
+          font-weight: 400;
+          font-size: 1rem;
+
+          color: var(--gray-600);
+        }
+      }
     }
 
-    p {
-      font-weight: 400;
+    button {
+      width: 100%;
+      color: #ffffff;
+      background: #950000;
+      border: 1px solid #950000;
+      filter: drop-shadow(0px 4px 16px rgba(241, 130, 59, 0.15));
+      padding: 1.25rem;
+      border-radius: 0.5rem;
+      font-weight: 700;
       font-size: 1rem;
-      line-height: 1.5rem;
-
-      color: var(--gray-600);
     }
   }
-
-  button {
+}
+@media only screen and (max-width: 767px) {
+  .calendarContainer {
     display: flex;
-    justify-content: center;
-    padding: 1rem;
-    width: 100%;
-    background: var(--red-500);
+    flex-direction: column;
+    align-items: flex-start;
 
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--white);
+    gap: 3rem;
 
-    &:hover {
-      background: var(--red-700);
+    .calendarContent {
+      width: 100%;
+    }
+
+    .calendarResult {
+      div {
+        flex-direction: column;
+      }
     }
   }
 }
