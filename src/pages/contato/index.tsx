@@ -19,13 +19,13 @@ export default function Contact() {
   return (
     <>
 
-    <div>
-    <ul className={global.breadcrumb}>
-      <li><a href="http://transduartego.com.br/">Home</a></li>
-      <li>Contato</li>
-    </ul>
-    </div>
-  
+      <div>
+        <ul className={global.breadcrumb}>
+          <li><a href="http://transduartego.com.br/">Home</a></li>
+          <li>Contato</li>
+        </ul>
+      </div>
+
 
       <section className={styles.contactContainer}>
         <div className={styles.contactHeader}>
@@ -64,7 +64,7 @@ export default function Contact() {
             </div>
             <div>
               <span>Redes sociais</span>
-              <Link  href="https://www.facebook.com/people/Transduarte-Fretamento-E-Turismo/100067150343262/">
+              <Link href="https://www.facebook.com/people/Transduarte-Fretamento-E-Turismo/100067150343262/">
                 <article>
                   <Facebook />
                   <p>Facebook</p>
@@ -78,7 +78,7 @@ export default function Contact() {
                 </article>
               </Link>
 
-              <Link  href="https://www.linkedin.com/in/grupo-transduarte-catal%C3%A3o-57a157248/?originalSubdomain=br">
+              <Link href="https://www.linkedin.com/in/grupo-transduarte-catal%C3%A3o-57a157248/?originalSubdomain=br">
                 <article>
                   <Linkedin />
                   <p>Linkedin</p>
@@ -87,7 +87,10 @@ export default function Contact() {
             </div>
           </div>
           <div className={styles.location}>
-<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=transduarte%20catalao&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe style={{
+              width: 600,
+              height: 500
+            }} id="gmap_canvas" src="https://maps.google.com/maps?q=transduarte%20catalao&t=&z=15&ie=UTF8&iwloc=&output=embed" scrolling="no"></iframe>
           </div>
         </div>
 
