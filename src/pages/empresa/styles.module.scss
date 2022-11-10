@@ -1,0 +1,89 @@
+.companyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 2rem;
+
+  margin-top: 7.5rem;
+
+  span {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #950000;
+  }
+
+  /* Style the list */
+.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+.breadcrumb 
+{ 
+  li {
+  display: inline;
+  font-size: 18px;
+} }
+
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumb 
+  { li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+} }
+
+/* Add a color to all links inside the list */
+.breadcrumb 
+  {
+    li 
+    { 
+      a {
+  color: #000;
+  text-decoration: none;
+    }
+  }
+  }
+
+/* Add a color on mouse-over */
+.breadcrumb 
+  { li 
+    { 
+      a:hover {
+  color: #000;
+  text-decoration: underline;
+} } } 
+
+  h3 {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  p {
+
+    span {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      color: #950000;
+      float: left;
+      margin: 0 20px 0px 0px!important;
+    }
+
+  }
+
+    img{
+      float: left!important; padding: 0 10px 0 0; max-width: 400px!important; }
+
+
+  
+    
+}

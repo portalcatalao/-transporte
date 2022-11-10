@@ -1,0 +1,112 @@
+.flagContainer {
+  background: #950000;
+  padding: 4.5rem 7rem;
+  margin-top: 5.5rem;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    border: 1px solid #fff;
+    filter: drop-shadow(0px 4px 16px rgba(241, 130, 59, 0.15));
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color:aliceblue
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    gap: 1rem;
+
+    width: 45%;
+
+    p {
+      font-weight: 700;
+      font-size: 3.5rem;
+      line-height: 4rem;
+
+      color: var(--white);
+    }
+
+    svg {
+      width: 100px;
+      height: 100px;
+
+      color: var(--white);
+    }
+  }
+
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 8px;
+
+    width: 19rem;
+    height: 5rem;
+
+    background: var(--white);
+
+    font-weight: 700;
+    font-size: 1rem;
+    color: #950000;
+
+    &:hover {
+      background: #b61c1f;
+      color: var(--white);
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .flagContainer {
+    padding-left: 22rem;
+    padding-right: 22rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flagContainer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    div {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .flagContainer {
+    flex-direction: column;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    gap: 3rem;
+
+    width: 100%;
+
+    div {
+      width: 100%;
+
+      p {
+        width: 100%;
+      }
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}

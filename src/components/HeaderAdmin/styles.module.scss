@@ -1,0 +1,40 @@
+.header {
+    height: 88px;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 88px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+
+    background: var(--red-500);
+}
+.signout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--red-700);
+    border-radius: 8px;
+
+    width: 48px;
+    height: 48px;
+}
+.user_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+        color: #fff;
+    }
+}

@@ -1,0 +1,123 @@
+.placeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 100%;
+  background: var(--gray-50);
+
+  margin-top: 7rem;
+  padding: 4rem 7rem;
+}
+
+.titlePlace {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  p {
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+
+    color: var(--gray-600);
+  }
+
+  span {
+    font-weight: 700;
+
+    font-size: 32px;
+    letter-spacing: 0.08em;
+
+    color: var(--red-500);
+  }
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+
+    gap: 6rem;
+
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 2rem;
+
+      color: var(--gray-600);
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      gap: 1rem;
+
+      span {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        svg {
+          color: var(--red-500);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .placeContainer {
+    padding: 2rem 22rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .placeContainer {
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .placeContainer {
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .placeContainer {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
