@@ -70,7 +70,7 @@ export default function Admin() {
                             </p>
                         </article>
                         {transparency?.file &&
-                            <a className={styles.button} href={`https://transduarte.herokuapp.com/${transparency.file}`} target={'_blank'} style={{background: '#333'}}>Baixar prestação de contas</a>
+                            <a className={styles.button} href={`https://app.transduartego.com.br/${transparency.file}`} target={'_blank'} style={{background: '#333'}}>Baixar prestação de contas</a>
                         }
                         <button className={styles.button} onClick={() => router.push(`/admin/transparency/${transparency.id}`)}>Editar</button>
                     </div>}

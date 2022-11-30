@@ -95,7 +95,7 @@ export default function TelaEmConstrucao() {
             }
           </div>
           {transparency?.file &&
-            <a href={`https://transduarte.herokuapp.com/${transparency.file}`} target={'_blank'}>Baixar prestação de contas</a>
+            <a href={`https://app.transduartego.com.br/${transparency.file}`} target={'_blank'}>Baixar prestação de contas</a>
           }
         </div>
       </div>
