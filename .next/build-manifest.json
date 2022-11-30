@@ -30,15 +30,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/ouvidoria": [
+    "/empresa": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/ouvidoria.js"
+      "static/chunks/pages/empresa.js"
     ],
-    "/transporte-publico": [
+    "/fretamento": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/transporte-publico.js"
+      "static/chunks/pages/fretamento.js"
+    ],
+    "/turismo": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/turismo.js"
     ]
   },
   "ampFirstPages": []

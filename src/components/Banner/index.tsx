@@ -10,16 +10,13 @@ export default function Banner() {
       <div className={styles.bannerContent}>
         <p className={styles.tag}>Fretamento Executivo, Transporte e Turismo</p>
         <p className={styles.featuredPhrase}>
-          Grupo Transduarte, mais de 42 anos de experiência!
+          Grupo Transduarte<br></br>
+          Transportando sua família
         </p>
-        <p>0
-          Somos uma empresa com base sólida e desempenho crescente em Catalão.
-          Contamos com uma frota de 162 veículos e 183 colaboradores para
-          desenvolver constantemente a melhor formar de lhe atender.
-        </p>
+        <p>O Grupo Transduarte está entre as melhores empresas de transporte de passageiros no Brasil, tanto em transporte público, fretamento ou turismo. Com sede em Catalão (GO), a empresa é reconhecida ainda pelos investimentos em modernização de sua frota para garantir mais conforto e segurança.         </p>
         <article>
-          <Link href='/ouvidoria'>Ouvidoria</Link>
-          <Link href='http://00347.itstransdata.com:34701/TDMaxWebCommerce/Default.aspx'>Comprar Passagem </Link>
+          <Link href='/ouvidoria'>SAP</Link>
+          <Link href='http://00347.itstransdata.com:34701/TDMaxWebCommerce/Default.aspx'>Compre sua passagem</Link>
         </article>
       </div>
       <div className={styles.bannerImage}><Image src={centro} alt="" /></div>
