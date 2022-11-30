@@ -67,6 +67,8 @@ export default function TelaEmConstrucao() {
                 </p>
                 <p>
                   <strong>Pagos: </strong> {Number(yearly.total_passengers) - Number(yearly.total_free)}
+                </p>
+                <p>
                   <strong>Gratuidades: </strong> {yearly.total_free}
                 </p>
               </article>
