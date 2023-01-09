@@ -6,6 +6,9 @@ const nextConfig = {
   // eslint: {
   //   ignoreDuringBuilds: true,
   // },
+  images: {
+    domains: ['cdn.positus.global']
+  }
 };
 
 module.exports = nextConfig;
