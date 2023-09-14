@@ -39,7 +39,7 @@ export default function guideOne() {
               <p className={styles.option}>3</p>
               <div className={styles.infos}>
                 <span>Pela internet</span>
-                <Link href="http://00347.itstransdata.com:34701/TDMaxWebCommerce/Default.aspx">
+                <Link href="https://max00347.itstransdata.com/TDMaxwebcommerce/">
                   <button>Comprar online</button>
                 </Link>
               </div>
