@@ -16,7 +16,7 @@ export default function Banner() {
         <p>O Grupo Transduarte está entre as melhores empresas de transporte de passageiros no Brasil, tanto em transporte público, fretamento ou turismo. Com sede em Catalão (GO), a empresa é reconhecida ainda pelos investimentos em modernização de sua frota para garantir mais conforto e segurança.         </p>
         <article>
           <Link href='/ouvidoria'>SAP</Link>
-          <Link href='http://00347.itstransdata.com:34701/TDMaxWebCommerce/Default.aspx'>Compre sua passagem</Link>
+          <Link href='https://max00347.itstransdata.com/TDMaxwebcommerce/'>Compre sua passagem</Link>
         </article>
       </div>
       <div className={styles.bannerImage}><Image src={centro} alt="" /></div>
