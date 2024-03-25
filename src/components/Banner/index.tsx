@@ -19,7 +19,7 @@ export default function Banner() {
           <Link href='https://max00347.itstransdata.com/TDMaxwebcommerce/'>Compre sua passagem</Link>
         </article>
       </div>
-      <div className={styles.bannerImage}><Image src={centro} alt="" /></div>
+      <div className={styles.bannerImage}><img src={'/foto_home.png'} alt="" /></div>
     </section>
   );
 }

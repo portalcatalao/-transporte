@@ -1,14 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/cadastro-fornecedores": "pages/cadastro-fornecedores.js",
-  "/empresa": "pages/empresa.js",
-  "/trabalhe-conosco": "pages/trabalhe-conosco.js",
-  "/guia-rapido": "pages/guia-rapido.js",
-  "/ouvidoria": "pages/ouvidoria.js",
-  "/sap": "pages/sap.js",
-  "/contato": "pages/contato.js",
-  "/transporte-publico": "pages/transporte-publico.js",
-  "/turismo": "pages/turismo.js"
+  "/_document": "pages/_document.js"
 }

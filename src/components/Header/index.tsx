@@ -73,6 +73,9 @@ export default function Header() {
                 </Link>
 
                 <ul className={styles.subMenu}>
+                <Link href="/horarios">
+                    <p onClick={showNavBar}>Horários</p>
+                  </Link>
                   <Link href="/guia-rapido">
                     <p onClick={showNavBar}>Guia rápido do transporte urbano</p>
                   </Link>

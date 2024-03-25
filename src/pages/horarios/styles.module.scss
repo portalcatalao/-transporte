@@ -1,0 +1,41 @@
+// styles.module.scss
+
+.horariosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem; /* Espaçamento entre os horários */
+  margin-top: 7.5rem; /* Espaçamento do topo */
+
+  h2 {
+    font-size: 2rem; /* Tamanho do título */
+    color: var(--red-700); /* Cor do título */
+  }
+
+  p {
+    font-size: 1rem; /* Tamanho do texto */
+    color: var(--gray-200); /* Cor do texto */
+  }
+}
+
+.horarioItem {
+  strong {
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.5rem; /* Tamanho do título do horário */
+    color: var(--red-700); /* Cor do título do horário */
+  }
+
+  p {
+    font-size: 1rem; /* Tamanho do texto do horário */
+    color: var(--gray-200); /* Cor do texto do horário */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .horariosContainer {
+    margin-top: 5rem; /* Ajuste de espaçamento do topo para telas menores */
+  }
+}
