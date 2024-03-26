@@ -26,7 +26,7 @@ export default function Enterprise() {
         <div>
           <p>
 
-            <Image src={img} alt="" className={styles.fl} />
+            <img src={'/image-4.jpeg'} alt="" className={styles.fl} />
 
 
             O Grupo Transduarte, formado pelas empresas Transduarte, Eldorado Turismo e Ibistur Transporte e Turismo, é administrado por Vivian Duarte desde o falecimento de seu pai, Dorivan Antônio Duarte.

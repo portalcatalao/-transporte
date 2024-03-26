@@ -44,17 +44,25 @@ export default function Contact() {
 
               <article>
                 <Phone />
-                <p>(64)3411-3155</p>
+                <p>(64) 3411-3155 - Portaria</p>
               </article>
 
               <article>
                 <Phone />
-                <p>(64) 9 8125-2995 - Comercial</p>
+                <p>(64) 3441-4281 - Escritório</p>
               </article>
 
               <article>
                 <Phone />
-                <p>(64) 9 8434-1355 - Atendimento ao Cliente</p>
+                <p>(64) 9 8441-1188 - Plantão 24h</p>
+              </article>
+              <article>
+                <Phone />
+                <p>(64) 9 9329-7997 - Orçamento e Comercial</p>
+              </article>
+              <article>
+                <Phone />
+                <p>(64) 3442-8875 - Terminal</p>
               </article>
 
               <article>
@@ -88,8 +96,9 @@ export default function Contact() {
           </div>
           <div className={styles.location}>
             <iframe style={{
-              width: 600,
-              height: 500
+              width: '100%',
+              height: '100%',
+              border: 0,
             }} id="gmap_canvas" src="https://maps.google.com/maps?q=transduarte%20catalao&t=&z=15&ie=UTF8&iwloc=&output=embed" scrolling="no"></iframe>
           </div>
         </div>

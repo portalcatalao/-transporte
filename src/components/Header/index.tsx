@@ -34,7 +34,7 @@ export default function Header() {
               <li>
                 <Link href="/empresa">
                   <ul className={styles.menuItem}>
-                    <p onClick={showNavBar}>Empresa</p>
+                    <p>Empresa</p>
                     <ChevronDown />
                   </ul>
                 </Link>
@@ -63,19 +63,20 @@ export default function Header() {
               <p onClick={showNavBar}>Turismo</p>
             </Link>
 
+            <Link href="/horarios">
+              <p onClick={showNavBar}>Horários</p>
+            </Link>
+
             <Link href="/">
               <li>
                 <Link href="/guia-rapido">
                   <ul className={styles.menuItem}>
-                    <p onClick={showNavBar}>Transporte urbano</p>
+                    <p>Transporte urbano</p>
                     <ChevronDown />
                   </ul>
                 </Link>
 
                 <ul className={styles.subMenu}>
-                <Link href="/horarios">
-                    <p onClick={showNavBar}>Horários</p>
-                  </Link>
                   <Link href="/guia-rapido">
                     <p onClick={showNavBar}>Guia rápido do transporte urbano</p>
                   </Link>

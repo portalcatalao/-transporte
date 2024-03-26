@@ -86,7 +86,8 @@
 }
 
 .location {
-  width: 789px;
+  width: 100%;
+  max-width: 789px;
   height: 445px;
 
   background: var(--gray-100);

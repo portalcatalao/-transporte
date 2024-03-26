@@ -50,18 +50,38 @@ export default function CharterAndTourism() {
 
         <div className={styles.transport}>
           <article>
-            <img src="/bus.png" alt="" />
-            <p>Ônibus</p>
+            <img src="/veiculo-01.jpg" alt="" />
+            <h4>Ônibus LD - 1700</h4>
+            <p>Ônibus Low Driver, 48 Poltronas Semi Leito.</p>
           </article>
 
           <article>
-            <img src="/minibus.png" alt="" />
-            <p>Micro-ônibus</p>
+            <img src="/veiculo-02.jpg" alt="" />
+            <h4>Ônibus DD - 1900</h4>
+            <p>Ônibus de dois andares, com uma cabine de passageiros superior e outra inferior.</p>
           </article>
 
           <article>
-            <img src="/taxi.png" alt="" />
-            <p>Carro Executivo</p>
+            <img src="/veiculo-03.jpg" alt="" />
+            <h4>Ônibus Convencional</h4>
+            <p>Ônibus Convencional, 45 poltronas, ar condicionado, cinto de segurança e iluminação de leitura.</p>
+          </article>
+          <article>
+            <img src="/veiculo-04.jpg" alt="" />
+            <h4>Micro-ônibus</h4>
+            <p>Micro-ônibus, 31 poltronas, ar condicionado, cinto de segurança e iluminação de leitura.</p>
+          </article>
+
+          <article>
+            <img src="/veiculo-05.jpg" alt="" />
+            <h4>Carro Executivo</h4>
+            <p>Spin Branca 2023</p>
+          </article>
+
+          <article>
+            <img src="/veiculo-06.jpg" alt="" />
+            <h4>Carro Executivo</h4>
+            <p>Onix Turbo 1.0 Branco Sedan 2022/23</p>
           </article>
         </div>
 

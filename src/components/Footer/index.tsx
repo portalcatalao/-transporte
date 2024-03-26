@@ -26,13 +26,9 @@ export default function Footer() {
           </div>
           <div>
             <Phone />
-            <p>(64) 3411-3155</p>
+            <p>(64) 9 9329-7997</p>
           </div>
-          <div>
-            <Phone />
-            <p>(64) 9 8434-1355</p>
-          </div>
-          
+
 
           <div>
             <Mail />
@@ -62,17 +58,17 @@ export default function Footer() {
           <p>atendimento@transduartego.com.br</p>
 
           <div>
-          <Link href="https://www.facebook.com/people/Transduarte-Fretamento-E-Turismo/100067150343262/">
-                <Facebook />
-              </Link>
+            <Link href="https://www.facebook.com/people/Transduarte-Fretamento-E-Turismo/100067150343262/">
+              <Facebook />
+            </Link>
 
-              <Link href="https://www.instagram.com/transduartego/">
-                <Instagram />
-              </Link>
+            <Link href="https://www.instagram.com/transduartego/">
+              <Instagram />
+            </Link>
 
-              <Link href="https://www.linkedin.com/in/grupo-transduarte-catal%C3%A3o-57a157248/?originalSubdomain=br">
-                <Linkedin />
-              </Link>
+            <Link href="https://www.linkedin.com/in/grupo-transduarte-catal%C3%A3o-57a157248/?originalSubdomain=br">
+              <Linkedin />
+            </Link>
           </div>
         </div>
         <div className={styles.copyright}>
