@@ -50,18 +50,6 @@ export default function CharterAndTourism() {
 
         <div className={styles.transport}>
           <article>
-            <img src="/veiculo-01.jpg" alt="" />
-            <h4>Ônibus LD - 1700</h4>
-            <p>Ônibus Low Driver, 48 Poltronas Semi Leito.</p>
-          </article>
-
-          <article>
-            <img src="/veiculo-02.jpg" alt="" />
-            <h4>Ônibus DD - 1900</h4>
-            <p>Ônibus de dois andares, com uma cabine de passageiros superior e outra inferior.</p>
-          </article>
-
-          <article>
             <img src="/veiculo-03.jpg" alt="" />
             <h4>Ônibus Convencional</h4>
             <p>Ônibus Convencional, 45 poltronas, ar condicionado, cinto de segurança e iluminação de leitura.</p>
