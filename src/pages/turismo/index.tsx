@@ -60,15 +60,16 @@ export default function CharterAndTourism() {
             <h4>Ônibus DD - 1900</h4>
             <p>Ônibus de dois andares, com uma cabine de passageiros superior e outra inferior.</p>
           </article>
-          {/* <article>
-            <img src="/bus.png" alt="" />
-            <p>Ônibus</p>
-          </article>
-
           <article>
-            <img src="/minibus.png" alt="" />
-            <p>Micro-ônibus</p>
-          </article> */}
+            <img src="/veiculo-03.jpg" alt="" />
+            <h4>Ônibus Convencional</h4>
+            <p>Ônibus Convencional, 45 poltronas, ar condicionado, cinto de segurança e iluminação de leitura.</p>
+          </article>
+          <article>
+            <img src="/veiculo-04.jpg" alt="" />
+            <h4>Micro-ônibus</h4>
+            <p>Micro-ônibus, 31 poltronas, ar condicionado, cinto de segurança e iluminação de leitura.</p>
+          </article>
 
           {/* <article>
             <img src="/taxi.png" alt="" />
